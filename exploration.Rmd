@@ -1,0 +1,49 @@
+```{r}
+install.packages('spotifyr')
+install.packages('tidyverse')
+install.packages('lubridate')
+install.packages("httpuv")
+```
+
+```{r}
+library(spotifyr)
+library(tidyverse)
+library(lubridate)
+library(httpuv)
+```
+
+```{r}
+lastfm <- read.csv("data/lastfm.csv")
+lastfm |>
+  colnames()
+```
+
+```{r}
+Sys.setenv(SPOTIFY_CLIENT_ID = '50a6babd1746400f9de5a5a6ddf2b870')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = '290ce59c9b10458987bf608c2ee732bb')
+
+client_id <- '50a6babd1746400f9de5a5a6ddf2b870'
+client_secret <- '290ce59c9b10458987bf608c2ee732bb'
+
+authorization_code <- get_spotify_authorization_code(scope = 
+                                                    scopes()[c(7,8,9,10,14,15)])
+```
+
+```{r}
+get_my_recently_played(limit = 50, authorization=authorization_code) |>
+  as_tibble() |>
+  colnames()
+```
+
+```{r}
+get_my_top_artists_or_tracks(type = 'artists', time_range = 'long_term', 
+                             authorization=authorization_code) |>
+  colnames()
+```
+
+```{r}
+get_artist_audio_features('the beatles') |>
+  colnames()
+```
+
+
