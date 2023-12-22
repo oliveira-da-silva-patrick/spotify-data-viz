@@ -1,0 +1,222 @@
+```{r}
+install.packages('spotifyr')
+install.packages('tidyverse')
+install.packages('lubridate')
+install.packages("httpuv")
+```
+
+```{r}
+library(spotifyr)
+library(tidyverse)
+library(lubridate)
+library(httpuv)
+```
+
+```{r}
+Sys.setenv(SPOTIFY_CLIENT_ID = '50a6babd1746400f9de5a5a6ddf2b870')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = '290ce59c9b10458987bf608c2ee732bb')
+
+authorization_code <- get_spotify_authorization_code(scope = 
+                                                    scopes()[c(4,7,8,9,10,14,15,17)])
+
+
+# new account
+Sys.setenv(SPOTIFY_CLIENT_ID = '5f61ecd12e7a46329bd88d94766a188b')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = 'ead36b43b1c640049d51d3b624f90bc2')
+
+new_authorization_code <- get_spotify_authorization_code(
+                        scope = scopes()[c(4,7,8,9,10,12,14,15,17,19)])
+```
+
+I have been using LastFM for \~2 years. It tracked my listening activity on Spotify and stored it. Only songs I have at least listened 50% of are kept by LastFM. So, skips or preview listenings are not included.
+
+```{r}
+lastfm <- read.csv("data/lastfm_unedited.csv") |>
+  filter(album != "") |> # remove youtube videos
+  mutate(utc_time = dmy_hm(utc_time),
+         date = as.Date(utc_time),
+         time = format(utc_time, format = "%H:%M")) |>
+  select(date, time, artist, album, track) |>
+  distinct() |>
+  mutate(lower_artist = str_trim(tolower(artist)),
+         lower_album = str_trim(tolower(album)),
+         lower_track = str_trim(tolower(track)))
+```
+
+```{r}
+# gets distinct songs listened and exports them into csv files.
+# use spotify tool to convert csv to playlists
+
+data <- lastfm |>
+  count(artist, album, track) |>
+  distinct() |>
+  select(artist, album, track)
+
+write.csv(data[1:10000, ], file = "data/dataset1.csv", row.names = FALSE)
+write.csv(data[10001:20000, ], file = "data/dataset2.csv", row.names = FALSE)
+write.csv(data[20001:23501, ], file = "data/dataset3.csv", row.names = FALSE)
+
+rm(data)
+```
+
+```{r}
+# take the three spotify playlists created with the before written
+# csv files and use spotifyr to get info on each track
+songs_listened <- get_playlist_tracks(playlist_id = '1cymqCw8E86WfXtqWPmKey')
+
+for (x in seq(from=100, to=10000, by=100)) {
+  songs_listened <- rbind(songs_listened, 
+                          get_playlist_tracks(playlist_id = '1cymqCw8E86WfXtqWPmKey',
+                                              offset = x))
+  
+}
+
+for (x in seq(from=0, to=10000, by=100)) {
+  songs_listened <- rbind(songs_listened, 
+                          get_playlist_tracks(playlist_id = '3eIbmwuWcGLHrdmNCErYFf',
+                                              offset = x))
+  songs_listened <- rbind(songs_listened, 
+                          get_playlist_tracks(playlist_id = '5CjuOZ20xiaNJqLw0pQm8j',
+                                              offset = x))
+  
+}
+
+# unnest columns and select only relevant columns
+
+songs_listened <- songs_listened |>
+  select(track.duration_ms, track.explicit, track.href,
+         track.id, track.name, track.popularity, track.album.name,
+         track.album.release_date) |>
+  mutate(lower_track.name = tolower(track.name),
+         lower_track.album.name = tolower(track.album.name))
+
+# store in csv to not have to run this again
+write.csv(as_tibble(songs_listened), file = "data/songs_listened_on_spotify.csv", row.names = FALSE)
+
+# left join of the two tables
+joined <- left_join(lastfm, songs_listened,
+                    join_by(lower_track == lower_track.name,
+                            lower_album == lower_track.album.name),
+                    multiple = "first") |>
+  filter(!is.na(track.id))
+
+# store in csv to not have to run this again
+write.csv(joined, file = "data/lastfm_and_ids.csv", row.names = FALSE)
+
+```
+
+```{r}
+
+# http://sortyourmusic.playlistmachinery.com/ use this link to get csv with audio
+# features
+
+audio_features <- read_delim("data/songs_listened_audio_features.csv", delim = ";") |>
+  select(!ID) |>
+  mutate(lower_Title = str_trim(tolower(Title)),
+         lower_Artist = str_trim(tolower(Artist)))
+
+lastfm_and_afs <- left_join(lastfm, audio_features,
+                    join_by(lower_track == lower_Title, lower_artist == lower_Artist),
+                    multiple = "first") |>
+  select(- c(lower_artist, lower_album, lower_track, Title, Artist, Rnd))
+
+colnames(lastfm_and_afs) <- c("listen_date", "listen_time", "artist", "album",
+                    "track", "release_date", "bpm", "energy", "danceability",
+                    "loudness", "valence", "length", "acoustic", "popularity",
+                    "sep")
+
+lastfm_and_afs <- lastfm_and_afs |>
+  select(- c(sep))
+
+lastfm_and_afs |>
+  filter(is.na(bpm)) # +- 20000 are not joined. why?
+
+lastfm_and_afs <- lastfm_and_afs |>
+  mutate(length = paste("00:", as.character(length), sep = ""),
+         length = substr(length, 1, nchar(length) - 3))
+
+write.csv(lastfm_and_afs, 
+          file = "data/lastfm_and_afs.csv", 
+          row.names = FALSE)
+
+```
+
+```{r}
+top_artists <- get_my_top_artists_or_tracks(type = "artists", limit = 50, 
+                                            time_range = "medium_term",
+                                            authorization = authorization_code)
+
+top_artists <- rbind(top_artists, get_my_followed_artists(limit = 50, 
+                                                      authorization = authorization_code))
+top_artists <- rbind(top_artists, get_my_followed_artists(limit = 50,
+                                      after = "4KEHIUSoWCcqrk8AddTE1O",
+                                      authorization = authorization_code))
+
+top_artists <- top_artists |>
+  filter(followers.total > 0) |>
+  distinct() |>
+  select(genres, id, name, popularity, type, followers.total) # |> unnest(genres)
+
+write_csv(top_artists, 
+          file = "data/understand_recs/top_artists.csv")
+
+artist_ids <- top_artists |>
+  filter(id != "16gEZTmX8wNpdWCgD28LRx") |> # no albums, only singles
+  filter(id != "3Cp20KSVlMlFuOdqiqHFGR") |>
+  select(id) |>
+  distinct()
+
+write_csv(artist_ids, 
+          file = "data/understand_recs/artists_ids.csv")
+artist_ids <- read_csv("data/understand_recs/artists_ids.csv") |> pull(id)
+audio_features <- get_artist_audio_features(artist_ids[1])
+for (id in artist_ids[2:88]) {
+  audio_features <- rbind(audio_features, get_artist_audio_features(id))
+}
+
+write_csv(audio_features, 
+          file = "data/understand_recs/audio_features.csv")
+
+lastfm <- read_csv("data/lastfm_unedited.csv") |>
+  mutate(listen_date = as.Date(dmy_hm(utc_time))) |>
+  filter(year(listen_date) == "2023") |>
+  count(artist, album, track, name = "times_listened")
+
+additional_info <- read_delim("data/songs_listened_audio_features.csv", delim = ";") |>
+  select(Title, Artist, Pop.)
+
+data <- inner_join(audio_features,
+           lastfm, 
+           join_by(artist_name == artist,
+                   album_name == album,
+                   track_name == track),
+           multiple = "first") |>
+  inner_join(top_artists,
+             join_by(artist_name == name),
+             multiple = "first") |>
+  left_join(additional_info,
+             join_by(track_name == Title,
+                     artist_name == Artist),
+             multiple = "first")
+
+rm(lastfm)
+rm(additional_info)
+
+data <- data |>
+  mutate(artist_genre = genres,
+         artist_popularity = popularity,
+         artist_followers = followers.total,
+         track_popularity = Pop.,
+         track_duration_ms = duration_ms) |>
+  select(track_name, track_id, track_popularity, track_duration_ms, artist_name, artist_id, 
+         artist_genre, artist_followers, artist_popularity, album_name, album_id, album_release_year,
+         danceability, energy, key, key_name, mode, mode_name, loudness, speechiness, 
+         acousticness, tempo, valence time_signature, times_listened) |>
+  unnest(artist_genre)
+
+write_csv(data, 
+          file = "data/understand_recs/data.csv")
+
+colnames(data)
+```
+

@@ -1,0 +1,298 @@
+---
+Author: Silva Patrick
+---
+
+```{r include=FALSE}
+library(spotifyr)
+library(tidyverse)
+library(lubridate)
+library(httpuv)
+library(viridis)
+library(fmsb)
+library(ggradar)
+```
+
+```{r include=FALSE}
+# personal account
+Sys.setenv(SPOTIFY_CLIENT_ID = '50a6babd1746400f9de5a5a6ddf2b870')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = '290ce59c9b10458987bf608c2ee732bb')
+
+pre_authorization_code <- get_spotify_authorization_code(
+                        scope = scopes()[c(4,7,8,9,10,12,14,15,17,19)])
+
+# new account
+Sys.setenv(SPOTIFY_CLIENT_ID = '5f61ecd12e7a46329bd88d94766a188b')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = 'ead36b43b1c640049d51d3b624f90bc2')
+
+new_authorization_code <- get_spotify_authorization_code(
+                        scope = scopes()[c(4,7,8,9,10,12,14,15,17,19)])
+
+theme_set(theme_minimal(base_size = 14))
+
+data <- read_csv("data/understand_recs/data.csv")
+audio_features <- read_csv("data/understand_recs/audio_features.csv")
+top_artists <- read_csv("data/understand_recs/top_artists.csv")
+```
+
+The data is used is fetched by using the Spotify package in R called "spotifyr". I also use a dataset created with lastfm who has been storing my activity since September 2021. However, because spotifyr has some limitations with the number of requests I can do, I limited my data to the artists Spotify thinks I listen most, and the artists I think I listen most. I also just use the the data gathered in 2023 from my lastfm dataset. During exploration I noticed, that there are too many rows that do not represent what I listen actively. I often just leave running Spotify running in the background and this resulted in the dataset having many songs that have been listened less than 2 times. Also, the less I have to fetch with the spotifyr package the better, because the fetch commands take a long time.
+
+The following plots just explain trends I follow when actively listening to music.
+
+Audio Features:
+
+danceability: The danceability feature typically ranges from 0 to 1, where 0 indicates a track that is not suitable for dancing, and 1 represents a highly danceable track.
+
+energy: The energy feature often ranges from 0 to 1 as well, where 0 indicates low energy or calmness, and 1 represents high energy or intensity.
+
+key: The key feature represents different musical keys, typically ranging from 0 to 11, with each number corresponding to a specific key.
+
+mode: The mode feature is binary and can take the values 0 or 1, where 0 represents a minor key and 1 represents a major key.
+
+loudness: The loudness feature is expressed in decibels (dB) and typically ranges from -60 dB to 0 dB. Higher values indicate louder tracks, whereas lower values indicate quieter tracks.
+
+speechiness: The speechiness feature ranges from 0 to 1, where 0 indicates a track that is predominantly instrumental, and 1 represents a track that is predominantly spoken or contains spoken words.
+
+acousticness: The acousticness feature also ranges from 0 to 1, where 0 indicates a track that is not acoustic or contains minimal acoustic elements, and 1 represents a track that is purely acoustic.
+
+tempo: The tempo feature represents the beats per minute (BPM) and can range from very low values (e.g., 40 BPM) to very high values (e.g., 200 BPM) or even more, depending on the track's tempo.
+
+```{r include=FALSE}
+help_genres <- data |>
+  count(artist_genre, artist_name, name = "nbr_songs", sort = TRUE) |>
+  count(artist_genre, sort = TRUE) |>
+  filter(n >= 4) |>
+  pull(artist_genre)
+```
+
+```{r echo=FALSE, warning=FALSE}
+# remove
+data |>
+  filter(!is.na(track_popularity)) |>
+  group_by(artist_popularity, artist_followers) |>
+  summarise(mean_tp = mean(track_popularity)) |>
+  ggplot(aes(x = mean_tp, y = artist_followers, color = artist_popularity)) +
+  geom_point() +
+  geom_smooth(se = F, color="red") +
+  scale_color_viridis() +
+  labs(x = "Mean Track Popularity", y = "Artist Follower", fill = "Artist Popularity") + 
+  scale_y_continuous(labels = scales::comma)
+```
+
+```{r echo=FALSE, warning=FALSE}
+left_join(audio_features, top_artists,
+          join_by(artist_id == id)) |> 
+  select(popularity, followers.total, genres) |>
+  distinct() |>
+  mutate(genres = ifelse(genres %in% help_genres, genres, "other")) |>
+  group_by(genres) |>
+  ggplot(aes(x = genres, y = popularity)) +
+  geom_violin() +
+  scale_color_viridis() +
+  labs(x = NULL, y = NULL, title = "Artist Genre Popularity") +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+```
+
+
+```{r echo=FALSE, warning=FALSE}
+# remove
+data |>
+  filter(!is.na(track_popularity)) |>
+  mutate(track_duration_min = track_duration_ms %/% 1000) |>
+  select(track_duration_min, track_popularity, artist_popularity) |>
+  ggplot(aes(x = track_popularity, y = track_duration_min, color = artist_popularity)) +
+  geom_jitter() +
+  scale_color_viridis_b() +
+  expand_limits(y = c(0, 1500)) +
+  labs(x = "Track Popularity", y = "Track Duration (in seconds)", color = "Artist Popularity")
+```
+
+Spotify has an issue when storing metadata. They only store the genres of artists but not of songs.
+
+```{r echo=FALSE}
+data |>
+  ggplot(aes(x = acousticness, y = energy, color = loudness)) +
+  geom_jitter() +
+  geom_smooth(color = "red") +
+  scale_color_viridis_b()
+```
+
+SPIDERPLOT !!! JOJO PLOT !!!
+
+```{r echo=FALSE}
+# radiohead <- get_artist_audio_features("Radiohead") # timeout
+audio_features |>
+  filter(artist_name == "Radiohead") |>
+  select(-contains("_"), album_name, -c("tempo", "loudness", "key", "mode", "artists", "type", "explicit")) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -album_name,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  #pivot_longer(cols = -c("feature", "album_name"), names_to = "stat", values_to = "value") |>
+  ggplot(aes(x = feature, y = mean, color = album_name, group = album_name)) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~album_name,  ncol=3) + 
+  theme(legend.position = "none",
+        axis.ticks.x = element_blank(),
+        axis.text.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "Audio feature distributions across Radiohead's discography",
+       y = NULL, x = NULL)
+```
+
+```{r echo=FALSE}
+# abba <- get_artist_audio_features("ABBA") # timeout
+audio_features |>
+  filter(artist_name == "The Beatles") |>
+  select(-contains("_"), album_name, -c("tempo", "loudness", "key", "mode", "artists", "type", "explicit")) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -album_name,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  #pivot_longer(cols = -c("feature", "album_name"), names_to = "stat", values_to = "value") |>
+  ggplot(aes(x = feature, y = mean, color = album_name, group = album_name)) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~album_name,  ncol=3) + 
+  theme(legend.position = "none",
+        axis.ticks.x = element_blank(),
+        axis.text.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "Audio feature distributions across The Beatles' discography",
+       y = NULL, x = NULL)
+```
+
+```{r echo=FALSE}
+audio_features |>
+  filter(artist_name == "Radiohead") |>
+  select(-contains("_"), track_name, -c("tempo", "loudness", "key", "mode", "artists", "type", "explicit")) |>
+  group_by(track_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -track_name,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  #pivot_longer(cols = -c("feature", "album_name"), names_to = "stat", values_to = "value") |>
+  ggplot(aes(x = feature, y = mean, color = track_name, group = track_name)) +
+  geom_point() +
+  geom_line() +
+  # facet_wrap(~album_name,  ncol=3) + 
+  theme(legend.position = "none",
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "Audio feature distributions across Radiohead's songs",
+       y = NULL, x = NULL)
+```
+
+```{r echo=FALSE}
+audio_features |>
+  filter(artist_name == "The Beatles") |>
+  select(-contains("_"), track_name, -c("tempo", "loudness", "key", "mode", "artists", "type", "explicit")) |>
+  group_by(track_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -track_name,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  #pivot_longer(cols = -c("feature", "album_name"), names_to = "stat", values_to = "value") |>
+  ggplot(aes(x = feature, y = mean, color = track_name, group = track_name)) +
+  geom_point() +
+  geom_line() +
+  # facet_wrap(~album_name,  ncol=3) + 
+  theme(legend.position = "none",
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "Audio feature distributions across The Beatles' songs",
+       y = NULL, x = NULL)
+```
+
+```{r echo=FALSE}
+help_artists <- data |>
+  count(artist_name, track_name) |>
+  count(artist_name, sort = TRUE) |>
+  filter(n > 15) |>
+  pull(artist_name)
+```
+
+```{r echo=FALSE, include=FALSE}
+
+data |>
+  filter(artist_name %in% help_artists) |>
+  select(-contains("_"), artist_name, -c("tempo", "loudness", "key", "mode")) |>
+  group_by(artist_name) |>
+  summarize(across(everything(), list(min = min,
+                                      sd = sd,
+                                      max = max))) |>
+  arrange(acousticness_sd)
+```
+
+```{r echo=FALSE, warning=FALSE}
+left_join(audio_features, top_artists,
+          join_by(artist_id == id)) |> 
+  select(genres, acousticness, danceability, energy, instrumentalness, liveness, speechiness, valence) |>
+  distinct() |>
+  mutate(genres = ifelse(genres %in% help_genres, genres, "other")) |>
+  filter(genres != "other") |>
+  group_by(genres) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -genres,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  ggplot(aes(x = feature, y = mean, color = genres, group = genres)) +
+  geom_point() +
+  geom_line() +
+  labs(x = NULL, y = NULL, title = "Genre Audio Distribution") +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+```
+```{r echo=FALSE}
+band_genres <- top_artists |>
+  filter(name %in% c("Radiohead","The Beatles")) |> pull(genres)
+
+top_artists |>
+  filter(name %in% c("Radiohead","The Beatles")) |>
+  select(genres, name)
+```
+
+```{r echo=FALSE}
+left_join(audio_features, top_artists,
+          join_by(artist_id == id)) |> 
+  select(genres, acousticness, danceability, energy, instrumentalness, liveness, speechiness, valence) |>
+  distinct() |>
+  mutate(genres = ifelse(genres %in% band_genres, genres, "other")) |>
+  filter(genres != "other") |>
+  group_by(genres) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -genres,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  ggplot(aes(x = feature, y = mean, color = genres, group = genres)) +
+  geom_point() +
+  geom_line() +
+  labs(x = NULL, y = NULL, title = "Genre Audio Distribution", subtitle = "Radiohead and The Beatles genres only") +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+```
+
+```{r echo=FALSE}
+left_join(audio_features, top_artists,
+          join_by(artist_id == id)) |> 
+  select(genres, acousticness, danceability, energy, instrumentalness, liveness, speechiness, valence) |>
+  distinct() |>
+  mutate(genres = ifelse(genres %in% band_genres, genres, "other")) |>
+  filter(genres != "other") |>
+  group_by(genres) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -genres,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  ggradar()
+```
