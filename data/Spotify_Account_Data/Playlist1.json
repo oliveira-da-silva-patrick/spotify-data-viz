@@ -1,0 +1,3674 @@
+{
+  "playlists": [
+    {
+      "name": "elevator vibes",
+      "lastModifiedDate": "2023-12-10",
+      "items": [
+        {
+          "track": {
+            "trackName": "Chega De Saudade",
+            "artistName": "Antônio Carlos Jobim",
+            "albumName": "The Composer Of Desafinado, Plays",
+            "trackUri": "spotify:track:2MtBBrELdGVS3kAQaOTPeD"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "The Girl From Ipanema",
+            "artistName": "Antônio Carlos Jobim",
+            "albumName": "The Composer Of Desafinado, Plays",
+            "trackUri": "spotify:track:6ZMrpXuvDO8T13QVrshXlL"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Look To The Sky",
+            "artistName": "Antônio Carlos Jobim",
+            "albumName": "Wave",
+            "trackUri": "spotify:track:0t7RB5ABfPzDB5vCh1oVX7"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Triste",
+            "artistName": "Antônio Carlos Jobim",
+            "albumName": "Wave",
+            "trackUri": "spotify:track:1N9e1myOWV26evyObwnkoM"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Wave",
+            "artistName": "Antônio Carlos Jobim",
+            "albumName": "Wave",
+            "trackUri": "spotify:track:2hXBS8q9rGMovfG1S8FB4F"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Skating In Central Park",
+            "artistName": "Bill Evans",
+            "albumName": "Undercurrent",
+            "trackUri": "spotify:track:1cpANF6zMBoFoxkoIjZHjv"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Chamomile Tea",
+            "artistName": "Chance Thrash",
+            "albumName": "Tea Time",
+            "trackUri": "spotify:track:249DfaJ8bAvgjsZNV47Llv"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Late Night Earl Grey",
+            "artistName": "Chance Thrash",
+            "albumName": "Late Night Earl Grey",
+            "trackUri": "spotify:track:0MIgm0IAnnZWiGNO9gBBCe"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Camille",
+            "artistName": "Georges Delerue",
+            "albumName": "Frances Ha (Music From The Motion Picture) OST",
+            "trackUri": "spotify:track:1F8vWoCczAqLaKABHVimQu"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "ハウスのテーマ",
+            "artistName": "Godiego",
+            "albumName": "ハウス",
+            "trackUri": "spotify:track:18asSxJz2NeCihJcwwhLWO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "amuletum",
+            "artistName": "Ichiko Aoba",
+            "albumName": "amuletum bouquet",
+            "trackUri": "spotify:track:1AYVWa4lo91cbbJuRAcH7w"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Asleep Among Endives",
+            "artistName": "Ichiko Aoba",
+            "albumName": "Asleep Among Endives",
+            "trackUri": "spotify:track:0RD3NWnHlyBCRwgNZy8QAn"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "bouquet",
+            "artistName": "Ichiko Aoba",
+            "albumName": "amuletum bouquet",
+            "trackUri": "spotify:track:1YtAvN3orGDreBWKwUyAAt"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "On a Clear Day",
+            "artistName": "Joe Hisaishi",
+            "albumName": "Kiki's Delivery Service Soundtrack Music Collection",
+            "trackUri": "spotify:track:1P47jw1VxOTQ0MM6sGKCkP"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "One Summer Day",
+            "artistName": "Joe Hisaishi",
+            "albumName": "Spirited Away Soundtrack",
+            "trackUri": "spotify:track:3gFQOMoUwlR6aUZj81gCzu"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "You're in Love",
+            "artistName": "Joe Hisaishi",
+            "albumName": "Howl's Moving Castle Soundtrack",
+            "trackUri": "spotify:track:3Lsdp3mbD27MjxvTeFm0v3"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Planetarium",
+            "artistName": "Justin Hurwitz",
+            "albumName": "La La Land",
+            "trackUri": "spotify:track:0PalOqMHzXSdwI4oRPYzNw"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Dusk",
+            "artistName": "Lamp",
+            "albumName": "Dusk to Dawn",
+            "trackUri": "spotify:track:721kgCWILQ0NBG9eil1nvZ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "The Lamp Is Low",
+            "artistName": "Laurindo Almeida",
+            "albumName": "Classical Current",
+            "trackUri": "spotify:track:4QzZVJc6qPTtTkPem7qZRo"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Abandoned Plaza",
+            "artistName": "Macabre Plaza",
+            "albumName": "Out With the Old in With the Taboo",
+            "trackUri": "spotify:track:49Q4EjrGxgllOt6jXJPfeI"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Before Love Was Lost",
+            "artistName": "Macabre Plaza",
+            "albumName": "Macabre Plaza",
+            "trackUri": "spotify:track:6dTSpcv3lNrgISzGNfNib0"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "A Bird's Last Look",
+            "artistName": "Macabre Plaza",
+            "albumName": "Out With the Old in With the Taboo",
+            "trackUri": "spotify:track:4sys6H7gj0kgsa2bUx0IeW"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "A Chimps' smile",
+            "artistName": "Macabre Plaza",
+            "albumName": "Remember Me? EP from Mp",
+            "trackUri": "spotify:track:7klijissVLzfNEiu8mFKl5"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Delish Dessert",
+            "artistName": "Macabre Plaza",
+            "albumName": "An Old Smile",
+            "trackUri": "spotify:track:7vGGUFMdweVONuL9RQKjC1"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "A Devil Peeking over the Bushes in My Backyard",
+            "artistName": "Macabre Plaza",
+            "albumName": "Dinner with an Old Puppet",
+            "trackUri": "spotify:track:2u4cfqSAiygsKzNaQeZBKf"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "A Devil's Touch in the Midwest",
+            "artistName": "Macabre Plaza",
+            "albumName": "An Old Smile",
+            "trackUri": "spotify:track:0W2CHYtNLuEBJCCuqOona7"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Dimly Lit Small Town",
+            "artistName": "Macabre Plaza",
+            "albumName": "Out With the Old in With the Taboo",
+            "trackUri": "spotify:track:4X2uLX27HgvoLdvFs7daOT"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Dinner With an Old Puppet",
+            "artistName": "Macabre Plaza",
+            "albumName": "Dinner with an Old Puppet",
+            "trackUri": "spotify:track:3fUArJHGEjar9Rjv0yPVYb"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "A Dragon With a Pirate Hat On",
+            "artistName": "Macabre Plaza",
+            "albumName": "Dinner with an Old Puppet",
+            "trackUri": "spotify:track:63V0OeQxgMqCmz26E4ApaI"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Fly the Voodoo Skies",
+            "artistName": "Macabre Plaza",
+            "albumName": "Remember Me? EP from Mp",
+            "trackUri": "spotify:track:3NOnd3UsUp9uxhSIVukxo2"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Glorifying the Past",
+            "artistName": "Macabre Plaza",
+            "albumName": "An Old Smile",
+            "trackUri": "spotify:track:2FrEie8YUCKPJaUWkFAKlV"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Let's Dance in the Dirt!",
+            "artistName": "Macabre Plaza",
+            "albumName": "Remember Me? EP from Mp",
+            "trackUri": "spotify:track:5TpxeB5UgBf7Us6cMMAMJX"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Looking Back With Such Great Memories Only to Realize That They Were Never There, or Were They?",
+            "artistName": "Macabre Plaza",
+            "albumName": "Macabre Plaza",
+            "trackUri": "spotify:track:2uMGlu4YRltY7epAyK5StY"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Middle of Nowhere",
+            "artistName": "Macabre Plaza",
+            "albumName": "Remember Me? EP from Mp",
+            "trackUri": "spotify:track:52Td1R2HmvP5gevSgUaifx"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "An Old Farmer's Smile",
+            "artistName": "Macabre Plaza",
+            "albumName": "Out With the Old in With the Taboo",
+            "trackUri": "spotify:track:31ayhhW1UfunXxMjU2QvbR"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "An Old Smile",
+            "artistName": "Macabre Plaza",
+            "albumName": "An Old Smile",
+            "trackUri": "spotify:track:7GipuWhjsp4BCIiuId4Gqc"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Small Town Pigeon",
+            "artistName": "Macabre Plaza",
+            "albumName": "An Old Smile",
+            "trackUri": "spotify:track:1G0Xr2WVtEOYnDTZDPAGTl"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Something That I Thought I Saw Once",
+            "artistName": "Macabre Plaza",
+            "albumName": "Macabre Plaza",
+            "trackUri": "spotify:track:1VpHL4SU5n8QSZzpveexuP"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Take Me for Example",
+            "artistName": "Macabre Plaza",
+            "albumName": "Macabre Plaza",
+            "trackUri": "spotify:track:5NainDtYQeNCuMaiEzkY4z"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "This Song Is Always Playing Inside a Horses Head",
+            "artistName": "Macabre Plaza",
+            "albumName": "Macabre Plaza",
+            "trackUri": "spotify:track:5lnGq5JqriejnzVVTEj4PQ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Till the Wheels Fall Off",
+            "artistName": "Macabre Plaza",
+            "albumName": "Out With the Old in With the Taboo",
+            "trackUri": "spotify:track:29ac5I0B0NierBqLwJgMkc"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "We'll Be There by Sundown",
+            "artistName": "Macabre Plaza",
+            "albumName": "An Old Smile",
+            "trackUri": "spotify:track:5mFi10G2AK9sENUcVBk3XN"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Wooden Door With a Smile",
+            "artistName": "Macabre Plaza",
+            "albumName": "An Old Smile",
+            "trackUri": "spotify:track:738AMHwLufwfPcFc5EuETC"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Love Theme",
+            "artistName": "Michael Small",
+            "albumName": "'klute' - Original Soundtrack Recording - Remastered",
+            "trackUri": "spotify:track:1w5LNMQslctoeOwoQjwqnu"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Street Market / Love Scene",
+            "artistName": "Michael Small",
+            "albumName": "'klute' - Original Soundtrack Recording - Remastered",
+            "trackUri": "spotify:track:1lLRV5Ya7jD3vX8rKFhxy8"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Plantasia",
+            "artistName": "Mort Garson",
+            "albumName": "Mother Earth's Plantasia",
+            "trackUri": "spotify:track:2XV5CUyw7gPVi18d718D4f"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "La dolce vita",
+            "artistName": "Nino Rota",
+            "albumName": "Original Music for the Movies of Federico Fellini",
+            "trackUri": "spotify:track:3Li7Cw9cnF830ijj8iX8H4"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Cutting Branches For A Temporary Shelter - Remastered 2008",
+            "artistName": "Penguin Cafe Orchestra",
+            "albumName": "Penguin Café Orchestra",
+            "trackUri": "spotify:track:0Lm3loChnSsNS37nxvLYcN"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Easy Lovers",
+            "artistName": "Piero Piccioni",
+            "albumName": "Camille 2000 (Original Motion Picture Soundtrack)",
+            "trackUri": "spotify:track:4u307txePIagFC4K67AdBA"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Mexican Dream",
+            "artistName": "Piero Piccioni",
+            "albumName": "Colpo Rovente - Red Hot Shot (Original Motion Picture Soundtrack)",
+            "trackUri": "spotify:track:1quput6F30wXk7Ym6XMPvS"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Violino",
+            "artistName": "Piero Piccioni",
+            "albumName": "Amore mio aiutami (Original Motion Picture Soundtrack)",
+            "trackUri": "spotify:track:77TMuFit7SUhof0gl8LSpE"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "bird",
+            "artistName": "potsu",
+            "albumName": "just friends",
+            "trackUri": "spotify:track:23NefpcmVqNSNoem2aryX1"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "bossa uh",
+            "artistName": "potsu",
+            "albumName": "ivy league",
+            "trackUri": "spotify:track:03tIAGs2JdAAKBm4Ew43x7"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "drowsy",
+            "artistName": "potsu",
+            "albumName": "just friends",
+            "trackUri": "spotify:track:1oTQW7hjnyBxAqq55A6fD9"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "food court",
+            "artistName": "potsu",
+            "albumName": "just friends",
+            "trackUri": "spotify:track:2kQ6txjexMRAfkfbTnLSm0"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "fresh air",
+            "artistName": "potsu",
+            "albumName": "just friends",
+            "trackUri": "spotify:track:00htH8evAOVrGSIkMz4uGc"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "i'm closing my eyes",
+            "artistName": "potsu",
+            "albumName": "i'm closing my eyes",
+            "trackUri": "spotify:track:4DZNBRBogcfKTTaTyi4V01"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "ivy league",
+            "artistName": "potsu",
+            "albumName": "ivy league",
+            "trackUri": "spotify:track:0UsnsNbl7hgw2kGqhTxGBv"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "just friends",
+            "artistName": "potsu",
+            "albumName": "just friends",
+            "trackUri": "spotify:track:1MprIFeBCp6gqiexinWCjZ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "letting go",
+            "artistName": "potsu",
+            "albumName": "just friends",
+            "trackUri": "spotify:track:7w8RSKKZCwLdAPoagv9HTd"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "[oops]",
+            "artistName": "potsu",
+            "albumName": "[oops]",
+            "trackUri": "spotify:track:2IhNiST8ZiY4KPcPSBzMcB"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "sunny",
+            "artistName": "potsu",
+            "albumName": "ivy league",
+            "trackUri": "spotify:track:52qcW2mdfLOkibfRZpp7KS"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Christmas Is Coming",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:69hH2X1SjculOZEOahrWQQ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "The Christmas Song",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:0Wj4AUqKMJ2k4NHhRUoWei"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Christmas Time Is Here - Instrumental",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:3Y9tu0vssINKFcA90JiLHb"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Christmas Time Is Here - Vocal",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:06Pfxmp9TtC2H00apclouT"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Fur Elise",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:1vH8OmOhfr5Gw6En3wXTh5"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Great Pumpkin Waltz",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:7lniXNKQilhilPfXDGmVOW"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Greensleeves",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:2H9zsdAjaue3tkg4d27jRm"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Hark, The Herald Angels Sing",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:3WneO6zhskTAI00NpB11Nf"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Linus And Lucy",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:5N96qwzTDhbf2y6FWAVz4c"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "My Little Drum",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:2UZ8JJZjOBXBCNpYg6ZFYm"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "O Tannenbaum",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:4YhY2qHdBmSX33uj8ms0oq"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Skating",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:4Gu4Z1RQ68h8fQnSDQxfKr"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Thanksgiving Theme",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:0baCR9QLEoMBMDvprSrGQO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "What Child Is This",
+            "artistName": "Vince Guaraldi Trio",
+            "albumName": "A Charlie Brown Christmas [2012 Remastered & Expanded Edition]",
+            "trackUri": "spotify:track:1KYp6R9KfYSna86gFkIhq0"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "カーリーとキャロル",
+            "artistName": "セキトオ・シゲオ",
+            "albumName": "華麗なるエレクトーン -ザ・ワード-",
+            "trackUri": "spotify:track:1DYTAJrspHHko3qfRC74NX"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "ザ・ワード II",
+            "artistName": "セキトオ・シゲオ",
+            "albumName": "華麗なるエレクトーン -ザ・ワード-",
+            "trackUri": "spotify:track:3OCxOUUH3FUf8xk0RuWADJ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "サンシャイン",
+            "artistName": "セキトオ・シゲオ",
+            "albumName": "華麗なるエレクトーン -キャッチ・イン・アリス-",
+            "trackUri": "spotify:track:7KuJ1d2qnP0ZBYfOw8h8vH"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "ピアノ・ソナタ Op. 13 〈悲愴〉 第2楽章",
+            "artistName": "セキトオ・シゲオ",
+            "albumName": "華麗なるエレクトーン -パセティック-",
+            "trackUri": "spotify:track:7xWJnUxzMiLfJgaBGJOhCZ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "涙のトッカータ",
+            "artistName": "セキトオ・シゲオ",
+            "albumName": "華麗なるエレクトーン -キャッチ・イン・アリス-",
+            "trackUri": "spotify:track:4cOhi9YvixryHg1MQ49vl6"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "素敵滅法",
+            "artistName": "物語シリーズ",
+            "albumName": "Bakemonogatari Gekihanongakushu",
+            "trackUri": "spotify:track:5ASxwnS9Y1EwxBsA9qmOV8"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "輔翼",
+            "artistName": "物語シリーズ",
+            "albumName": "Bakemonogatari Gekihanongakushu",
+            "trackUri": "spotify:track:5pgPbzDWhQCVcuKE1g4085"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    },
+    {
+      "name": "poe-like",
+      "lastModifiedDate": "2023-12-10",
+      "items": [
+        {
+          "track": {
+            "trackName": "Theme of Laura",
+            "artistName": "Akira Yamaoka",
+            "albumName": "SILENT HILL2 (Original Soundtrack)",
+            "trackUri": "spotify:track:1gWL1q8vipVkWgwPWDsbWL"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Flim",
+            "artistName": "Aphex Twin",
+            "albumName": "Come To Daddy",
+            "trackUri": "spotify:track:3JJ4BoL9WVHk4Yye2EGJC7"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "QKThr",
+            "artistName": "Aphex Twin",
+            "albumName": "Drukqs",
+            "trackUri": "spotify:track:4LIM4qmpHABufePRrLWbiM"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Gm",
+            "artistName": "Bluetile Lounge",
+            "albumName": "Lowercase",
+            "trackUri": "spotify:track:5jTpyPE68peeIJZzx1qTws"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Wriding",
+            "artistName": "Bluetile Lounge",
+            "albumName": "Lowercase",
+            "trackUri": "spotify:track:1hYYF1K49BL636rXNbpyaH"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Death",
+            "artistName": "C418",
+            "albumName": "Minecraft - Volume Alpha",
+            "trackUri": "spotify:track:4B6A1T91lF1IRKkBVwUzWe"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Living Mice",
+            "artistName": "C418",
+            "albumName": "Minecraft - Volume Alpha",
+            "trackUri": "spotify:track:4x79cjezqX3yd15rSrAVFF"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Key",
+            "artistName": "C418",
+            "albumName": "Minecraft - Volume Alpha",
+            "trackUri": "spotify:track:7K7E7LKK51PezScgsvVg9Y"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Bloody And Blunt",
+            "artistName": "Cocteau Twins",
+            "albumName": "The Moon and the Melodies",
+            "trackUri": "spotify:track:1uHFzwXv5h4O8pFbo6LFhB"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Eyes Are Mosaics",
+            "artistName": "Cocteau Twins",
+            "albumName": "The Moon and the Melodies",
+            "trackUri": "spotify:track:0nh702r8bba4yTwk2U3yhj"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "The Ghost Has No Home",
+            "artistName": "Cocteau Twins",
+            "albumName": "The Moon and the Melodies",
+            "trackUri": "spotify:track:0rtfF7pfVYD5nvBQ1mPRsD"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Memory Gongs",
+            "artistName": "Cocteau Twins",
+            "albumName": "The Moon and the Melodies",
+            "trackUri": "spotify:track:1AIAZEGLCQ4Y6oSnsjqOYD"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Ooze Out And Away, Onehow",
+            "artistName": "Cocteau Twins",
+            "albumName": "The Moon and the Melodies",
+            "trackUri": "spotify:track:157RVHlboS0mum8aCu0WBp"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Sea, Swallow Me",
+            "artistName": "Cocteau Twins",
+            "albumName": "The Moon and the Melodies",
+            "trackUri": "spotify:track:7vPHiwgCOAjSBRjAirbMvS"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "She Will Destroy You",
+            "artistName": "Cocteau Twins",
+            "albumName": "The Moon and the Melodies",
+            "trackUri": "spotify:track:2cWc4NJ2WYAZllS4VWFcHs"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Why Do You Love Me?",
+            "artistName": "Cocteau Twins",
+            "albumName": "The Moon and the Melodies",
+            "trackUri": "spotify:track:6mnDez8mWJqlTyp6GjCKKR"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "A Rose Blooms in Chaos",
+            "artistName": "Davishmar",
+            "albumName": "A Rose Blooms in Chaos",
+            "trackUri": "spotify:track:7fuKPn33GxRh62aC8n71M3"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "When I See Scissors I Can't Help But Think of You",
+            "artistName": "The Dead Texan",
+            "albumName": "The Dead Texan",
+            "trackUri": "spotify:track:3xjhSs614NqALivarSVYhV"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "A Mother's Lament",
+            "artistName": "Dorian Concept",
+            "albumName": "The Nature of Imitation",
+            "trackUri": "spotify:track:6oJrnFB6mrYzj9C4XOveva"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Dying Brokenhearted",
+            "artistName": "Empyrium",
+            "albumName": "Where at Night the Wood Grouse Plays",
+            "trackUri": "spotify:track:79q5uWgBdbmKUolgLcI9ed"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "The Dead Flag Blues",
+            "artistName": "Godspeed You! Black Emperor",
+            "albumName": "F♯ A♯ ∞",
+            "trackUri": "spotify:track:0YzMEu5sGNX0JKr9mdBtzd"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "East Hastings",
+            "artistName": "Godspeed You! Black Emperor",
+            "albumName": "F♯ A♯ ∞",
+            "trackUri": "spotify:track:5jMuXTa5hECm37P7C0mbIB"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Like Antennas To Heaven…",
+            "artistName": "Godspeed You! Black Emperor",
+            "albumName": "Lift Your Skinny Fists Like Antennas to Heaven",
+            "trackUri": "spotify:track:31pLszBSGG3ToeXcPIgyXF"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Providence",
+            "artistName": "Godspeed You! Black Emperor",
+            "albumName": "F♯ A♯ ∞",
+            "trackUri": "spotify:track:35MghvJDcBxKqb1VHL6ePy"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Sleep",
+            "artistName": "Godspeed You! Black Emperor",
+            "albumName": "Lift Your Skinny Fists Like Antennas to Heaven",
+            "trackUri": "spotify:track:05JqOBN6XW4eFUVQlgR0I3"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Static",
+            "artistName": "Godspeed You! Black Emperor",
+            "albumName": "Lift Your Skinny Fists Like Antennas to Heaven",
+            "trackUri": "spotify:track:1mVrFcCEpYcF6ISXGsyRk5"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Storm",
+            "artistName": "Godspeed You! Black Emperor",
+            "albumName": "Lift Your Skinny Fists Like Antennas to Heaven",
+            "trackUri": "spotify:track:1HfJV18PHF2UQqh4TuySBJ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Earthmover",
+            "artistName": "Have A Nice Life",
+            "albumName": "Deathconsciousness",
+            "trackUri": "spotify:track:77yGZRjuWfSzbDT0ROSSUG"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Holy Fucking Shit: 40,000",
+            "artistName": "Have A Nice Life",
+            "albumName": "Deathconsciousness",
+            "trackUri": "spotify:track:0oPnyCLqcn2ZNzwy5pLKDR"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "I Don't Love",
+            "artistName": "Have A Nice Life",
+            "albumName": "Deathconsciousness",
+            "trackUri": "spotify:track:1AOisyOwLgQ7EveVBCo0GG"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "A Quick One Before the Eternal Worm Devours Connecticut",
+            "artistName": "Have A Nice Life",
+            "albumName": "Deathconsciousness",
+            "trackUri": "spotify:track:34dkZZNQJzEJRqPkywYmEY"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Who Would Leave Their Son out in the Sun?",
+            "artistName": "Have A Nice Life",
+            "albumName": "Deathconsciousness",
+            "trackUri": "spotify:track:0YyazmHAuu1j8wxSZXSPK4"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "5 Pieces, Op. 75, \"The Trees\": No. 3 Aspen",
+            "artistName": "Jean Sibelius",
+            "albumName": "Sibelius: Piano Music, Vol. 4",
+            "trackUri": "spotify:track:6MoY9dj27qBHzCCmcvYTIJ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "5 Pieces, Op. 75, \"The Trees\": No. 5 Granen (The Spruce)",
+            "artistName": "Jean Sibelius",
+            "albumName": "Sibelius: Piano Music, Vol. 4",
+            "trackUri": "spotify:track:5gA69lYP3nCULBTdL3quJO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Kami Shama (Katari)",
+            "artistName": "Masakatsu Takagi",
+            "albumName": "Kagayaki",
+            "trackUri": "spotify:track:1m6RKiLLjGmO0jOlE1xBvt"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Ooharu",
+            "artistName": "Masakatsu Takagi",
+            "albumName": "Kagayaki",
+            "trackUri": "spotify:track:4y0U65ATXW92mjAYtX9gds"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Ooharu (Piano)",
+            "artistName": "Masakatsu Takagi",
+            "albumName": "Kagayaki",
+            "trackUri": "spotify:track:28FyFsAX7QkfhSbCBfEv4T"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Shiraiki",
+            "artistName": "Masakatsu Takagi",
+            "albumName": "Kagayaki",
+            "trackUri": "spotify:track:18kzSrvapnN9HYzaxVuBPU"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Tani No Hamabe",
+            "artistName": "Masakatsu Takagi",
+            "albumName": "Kagayaki",
+            "trackUri": "spotify:track:0lx6ez2n8t3tnYwPV1wPrf"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Totorokimidu",
+            "artistName": "Masakatsu Takagi",
+            "albumName": "Kagayaki",
+            "trackUri": "spotify:track:14TLstXJrM2WmaXw0czMeg"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Urute",
+            "artistName": "Masakatsu Takagi",
+            "albumName": "Kagayaki",
+            "trackUri": "spotify:track:3wIaeSSHF9mKhHwmxLUd47"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Yamafuro",
+            "artistName": "Masakatsu Takagi",
+            "albumName": "Kagayaki",
+            "trackUri": "spotify:track:4mUxm9AYmhvnPDnmTwQSQn"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "The Glow, Pt. 2",
+            "artistName": "The Microphones",
+            "albumName": "The Glow, Pt. 2",
+            "trackUri": "spotify:track:05XSpcg3nm0zpDHd36AZOs"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Headless Horseman",
+            "artistName": "The Microphones",
+            "albumName": "The Glow, Pt. 2",
+            "trackUri": "spotify:track:2Qhkk4hPdkt3NIVtiT8QEe"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "I Am Bored",
+            "artistName": "The Microphones",
+            "albumName": "The Glow, Pt. 2",
+            "trackUri": "spotify:track:2J5myP5z9V64HycP51s4nY"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "I Felt My Size",
+            "artistName": "The Microphones",
+            "albumName": "The Glow, Pt. 2",
+            "trackUri": "spotify:track:228GcDvINSeUpeoiZ46eB0"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "I Want Wind to Blow",
+            "artistName": "The Microphones",
+            "albumName": "The Glow, Pt. 2",
+            "trackUri": "spotify:track:1bAZV1EBTRi9t1cVg75i8t"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "The Moon",
+            "artistName": "The Microphones",
+            "albumName": "The Glow, Pt. 2",
+            "trackUri": "spotify:track:4pbEwQiDjPln3oYlijXuOE"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "My Warm Blood",
+            "artistName": "The Microphones",
+            "albumName": "The Glow, Pt. 2",
+            "trackUri": "spotify:track:52Qfwu9qm05Jo4en5k7x9v"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Crumbling Together",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Crumbling",
+            "trackUri": "spotify:track:7zCC8WCoGyxiBiPH9amkvS"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Curve and Light",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Crumbling",
+            "trackUri": "spotify:track:2mVxEMY8NL283kaVpwDYIf"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Dirt",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Crumbling",
+            "trackUri": "spotify:track:1Za5odxYVsm6t0efDxHvaD"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Gameun Deut",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Crumbling",
+            "trackUri": "spotify:track:2sdfKScDoby6lkbwRu4eA6"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "No Answer",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Crumbling",
+            "trackUri": "spotify:track:53jij8r7Dh9qhe5d1wkXq7"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Protector",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Crumbling",
+            "trackUri": "spotify:track:6usXBwKBl8yNs8yS2EVCbp"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Swamp",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Gongjoong Doduk",
+            "trackUri": "spotify:track:1X5EE22fKyFdGH5nqnucBo"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "These Chains",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Crumbling",
+            "trackUri": "spotify:track:4eFkPKdkAbyLjHneGQQNPe"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "White Room",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Gongjoong Doduk",
+            "trackUri": "spotify:track:47kKriL1d9WiVRBy0YxW5V"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Why?",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Crumbling",
+            "trackUri": "spotify:track:2VnMpkVmDlbvpaRs5XOrrx"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Everything In Its Right Place",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:2kRFrWaLWiKq48YYVdGcm8"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "How to Disappear Completely",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:2rtGaCAeYtmcIvuZsvgTf6"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Idioteque",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:1W5XugQJGhnSATMI5n002M"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "In Limbo",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:0xivCtzVVrdeq32s8EnOO6"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Kid A",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:3QDahKSqLwYJYQRbILdzS6"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Morning Bell",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:4h37RgtBg9iynN3BIL5lFU"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Motion Picture Soundtrack",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:4SrRrB27n7fiRkQcPoKfpk"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "The National Anthem",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:4Wgj6jzoI2gYlumXdYAB8U"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Optimistic",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:1FoUsSi9BCTlNt2Vd7V8XA"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Paranoid Android",
+            "artistName": "Radiohead",
+            "albumName": "OK Computer",
+            "trackUri": "spotify:track:6LgJvl0Xdtc73RJ1mmpotq"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Treefingers",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:4LrfsgQ5AGouvH3PlxW2PC"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Untitled",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:4aeCuOowYXJXrMZsVHZbfF"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "You And Whose Army?",
+            "artistName": "Radiohead",
+            "albumName": "Amnesiac",
+            "trackUri": "spotify:track:7Hg6a7tZsVTkXnBUepjZU6"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "first period",
+            "artistName": "Rei Harakami",
+            "albumName": "lust",
+            "trackUri": "spotify:track:2qqu71Ag7Z4RvhcVd7zrfl"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Big Man's Last Trip Outside",
+            "artistName": "Ricky Eat Acid",
+            "albumName": "Three Love Songs",
+            "trackUri": "spotify:track:1Ue1yIwSqyHQfeLJLKDWNd"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Driving Alone Past Roadwork at Night",
+            "artistName": "Ricky Eat Acid",
+            "albumName": "Three Love Songs",
+            "trackUri": "spotify:track:1ZtVInMPy1na9kShhDlSdp"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "I Can Hear the Heart Breaking As One",
+            "artistName": "Ricky Eat Acid",
+            "albumName": "Three Love Songs",
+            "trackUri": "spotify:track:0KlD38depMS3z1KbF26neu"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "In Rural Virginia; Watching Glowing Lights Crawl from the Dark Corners of the Room",
+            "artistName": "Ricky Eat Acid",
+            "albumName": "Three Love Songs",
+            "trackUri": "spotify:track:4TvXYkCHA9WN0kucAx6rae"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Inside My House; Some Place I Keep Dreaming About",
+            "artistName": "Ricky Eat Acid",
+            "albumName": "Three Love Songs",
+            "trackUri": "spotify:track:0diGZ1ihw9FVAf07OEyuOO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Inside Your House; It Will Swallow Us Too",
+            "artistName": "Ricky Eat Acid",
+            "albumName": "Three Love Songs",
+            "trackUri": "spotify:track:1Hl1fD4XLWu8ALMxy1OMIU"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "It Will Draw Me Over to It Like It Always Does",
+            "artistName": "Ricky Eat Acid",
+            "albumName": "Three Love Songs",
+            "trackUri": "spotify:track:7a49W6h0kTL5VY6GgNJy8Z"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Outside Your House; The Lights Went Out & There Was Nothing",
+            "artistName": "Ricky Eat Acid",
+            "albumName": "Three Love Songs",
+            "trackUri": "spotify:track:5pEP9zE9YxxTxpzzSsTRJC"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "There is Only You in the Light & Nothing Else",
+            "artistName": "Ricky Eat Acid",
+            "albumName": "Three Love Songs",
+            "trackUri": "spotify:track:7LyzWXE7WxAabNZui7Ps0k"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Little Rascal (いたずら天使) - 2007 ver.",
+            "artistName": "Toshifumi Hinata",
+            "albumName": "オーガニック・スタイル 日向敏文 the BEST ～In the Twilight～",
+            "trackUri": "spotify:track:4s2E1SS8OFeMabT0ACyXfG"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Reflections",
+            "artistName": "Toshifumi Hinata",
+            "albumName": "ひとつぶの海",
+            "trackUri": "spotify:track:5Zf25eS8E1znm9mez4cGsm"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        },
+        {
+          "track": {
+            "trackName": "Grenadine",
+            "artistName": "Vincent Delerm",
+            "albumName": "Seize printemps",
+            "trackUri": "spotify:track:2rso25m7GZBGpliSBgbn2V"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-10"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    },
+    {
+      "name": " slo",
+      "lastModifiedDate": "2023-12-09",
+      "items": [
+        {
+          "track": {
+            "trackName": "Asleep Among Endives",
+            "artistName": "Ichiko Aoba",
+            "albumName": "Asleep Among Endives",
+            "trackUri": "spotify:track:7AKxbxzkxm2ERWrd1ggniO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Behind The Moon Shadow",
+            "artistName": "Lamp",
+            "albumName": "For Lovers",
+            "trackUri": "spotify:track:77zsHdb523rUQnOYUSG3qb"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Chamomile Tea",
+            "artistName": "Chance Thrash",
+            "albumName": "Tea Time",
+            "trackUri": "spotify:track:249DfaJ8bAvgjsZNV47Llv"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "The Flower Garden",
+            "artistName": "Joe Hisaishi",
+            "albumName": "Howl's Moving Castle Soundtrack",
+            "trackUri": "spotify:track:6IZF8hi9J6EtFDLQqOlSbu"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "kokoro no sekai",
+            "artistName": "Ichiko Aoba",
+            "albumName": "Kamisori Otome",
+            "trackUri": "spotify:track:1Lu6XoAbnngrTMhO4PXLU0"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Águas De Março",
+            "artistName": "Elis Regina",
+            "albumName": "Elis & Tom",
+            "trackUri": "spotify:track:15ouqiBsgL12olEwP3COsH"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Diz Que Fui Por Ai",
+            "artistName": "Nara Leão",
+            "albumName": "Nara",
+            "trackUri": "spotify:track:6BAlnEh3wnUMpIBiuQQHYg"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Last Train At 25 O'clock",
+            "artistName": "Lamp",
+            "albumName": "For Lovers",
+            "trackUri": "spotify:track:3VPBPBZKxQu3bqeuzz8gRm"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Berimbau",
+            "artistName": "Nara Leão",
+            "albumName": "Nara",
+            "trackUri": "spotify:track:3gMgw5S9svycqku9DHkefQ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Look To The Sky",
+            "artistName": "Antônio Carlos Jobim",
+            "albumName": "Wave",
+            "trackUri": "spotify:track:0t7RB5ABfPzDB5vCh1oVX7"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Shiraiki",
+            "artistName": "Masakatsu Takagi",
+            "albumName": "Kagayaki",
+            "trackUri": "spotify:track:18kzSrvapnN9HYzaxVuBPU"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Pra Que Discutir Com Madame?",
+            "artistName": "João Gilberto",
+            "albumName": "In Tokyo",
+            "trackUri": "spotify:track:4qZ6Jm9bvQSxcacHe6qT0w"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "On Your Own Love Again",
+            "artistName": "Jessica Pratt",
+            "albumName": "On Your Own Love Again",
+            "trackUri": "spotify:track:1UOEwcIsv696Gaq8ZA6NUu"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "first period",
+            "artistName": "Rei Harakami",
+            "albumName": "[lust]",
+            "trackUri": "spotify:track:37BtXnSdQYv2D15qxXe7md"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "From The Start",
+            "artistName": "Laufey",
+            "albumName": "From The Start",
+            "trackUri": "spotify:track:1Ukxccao1BlWrPhYkcXbwZ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "One Summer Day",
+            "artistName": "Joe Hisaishi",
+            "albumName": "Spirited Away Soundtrack",
+            "trackUri": "spotify:track:3gFQOMoUwlR6aUZj81gCzu"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "見せかけのラブソング",
+            "artistName": "indigo la End",
+            "albumName": "Crying End Roll",
+            "trackUri": "spotify:track:5fHbYj95jdSsb0wQ6QntIJ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Wave",
+            "artistName": "João Gilberto",
+            "albumName": "Amoroso",
+            "trackUri": "spotify:track:3JbZ8W2aFTIEP6EidBlN38"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Triste",
+            "artistName": "Antônio Carlos Jobim",
+            "albumName": "Wave",
+            "trackUri": "spotify:track:1N9e1myOWV26evyObwnkoM"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Camille",
+            "artistName": "Georges Delerue",
+            "albumName": "Frances Ha (Music From The Motion Picture) OST",
+            "trackUri": "spotify:track:1F8vWoCczAqLaKABHVimQu"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Bowlly Goes Dancing Drunk into the Future",
+            "artistName": "Loving",
+            "albumName": "Loving",
+            "trackUri": "spotify:track:2MIYcQ9FnuNH6JzIQHi2eG"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "輔翼",
+            "artistName": "物語シリーズ",
+            "albumName": "Bakemonogatari Gekihanongakushu",
+            "trackUri": "spotify:track:5pgPbzDWhQCVcuKE1g4085"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "It's Your Dog Charlie Brown",
+            "artistName": "Vince Guaraldi",
+            "albumName": "Oh Good Grief",
+            "trackUri": "spotify:track:5u0K4LV2JAoQ0IBypKBVty"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "La dolce vita",
+            "artistName": "Nino Rota",
+            "albumName": "Original Music for the Movies of Federico Fellini",
+            "trackUri": "spotify:track:3Li7Cw9cnF830ijj8iX8H4"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Vive",
+            "artistName": "Carmen Cuesta",
+            "albumName": "Palabras",
+            "trackUri": "spotify:track:7CItlUyNxRPmfTZGgrVBNz"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "バルザックおじさん",
+            "artistName": "Saho Terao",
+            "albumName": "珈琲",
+            "trackUri": "spotify:track:47LDCXMxYEIkLeBKydcKBA"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Plantasia",
+            "artistName": "Mort Garson",
+            "albumName": "Mother Earth's Plantasia",
+            "trackUri": "spotify:track:2XV5CUyw7gPVi18d718D4f"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "On a Clear Day",
+            "artistName": "Joe Hisaishi",
+            "albumName": "Kiki's Delivery Service Soundtrack Music Collection",
+            "trackUri": "spotify:track:1P47jw1VxOTQ0MM6sGKCkP"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "The Lamp Is Low",
+            "artistName": "Laurindo Almeida",
+            "albumName": "Classical Current",
+            "trackUri": "spotify:track:4QzZVJc6qPTtTkPem7qZRo"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "The Girl From Ipanema",
+            "artistName": "Stan Getz",
+            "albumName": "Getz/Gilberto",
+            "trackUri": "spotify:track:0Eir5hEgKUjm8liGGXfghF"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "bouquet",
+            "artistName": "Ichiko Aoba",
+            "albumName": "amuletum bouquet",
+            "trackUri": "spotify:track:3V0NxWbbUTa3BUAnchm11i"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Chega de Saudade",
+            "artistName": "Carmen Cuesta",
+            "albumName": "Mi Bossa Nova",
+            "trackUri": "spotify:track:4Q80yrAT7GE5KJfPasQrhD"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Visions",
+            "artistName": "Loving",
+            "albumName": "If I Am Only My Thoughts",
+            "trackUri": "spotify:track:1rcxltU3Mzn8gN6Z8ly9Zh"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Scenery",
+            "artistName": "Ryo Fukui",
+            "albumName": "シーナリィ",
+            "trackUri": "spotify:track:2Uk4xYpKI1WIOtWqS6fs62"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "letting go",
+            "artistName": "potsu",
+            "albumName": "just friends",
+            "trackUri": "spotify:track:7w8RSKKZCwLdAPoagv9HTd"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Kodoku",
+            "artistName": "Mei Semones",
+            "albumName": "Tsukino",
+            "trackUri": "spotify:track:5WpYwsihExmQYHDcoSfeka"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Urute",
+            "artistName": "Masakatsu Takagi",
+            "albumName": "Kagayaki",
+            "trackUri": "spotify:track:3wIaeSSHF9mKhHwmxLUd47"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Les Aventures de TINTIN",
+            "artistName": "Taeko Onuki",
+            "albumName": "Copine",
+            "trackUri": "spotify:track:0haoDgX7K78fJJR5UXzh8G"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Chega De Saudade",
+            "artistName": "Antônio Carlos Jobim",
+            "albumName": "Inédito",
+            "trackUri": "spotify:track:3vNwY4KaBRnJP4G6UBJPZH"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Ripples of stars",
+            "artistName": "Tadashi Shinkawa",
+            "albumName": "sweet hereafter",
+            "trackUri": "spotify:track:7eUGADiLS5Jw38747vhpxo"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "You're in Love",
+            "artistName": "Joe Hisaishi",
+            "albumName": "Howl's Moving Castle Soundtrack",
+            "trackUri": "spotify:track:3Lsdp3mbD27MjxvTeFm0v3"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Fly Me To The Moon - 2008 Remastered",
+            "artistName": "Frank Sinatra",
+            "albumName": "Nothing But The Best",
+            "trackUri": "spotify:track:7FXj7Qg3YorUxdrzvrcY25"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Insensatez",
+            "artistName": "Nara Leão",
+            "albumName": "Nara Dez Anos Depois",
+            "trackUri": "spotify:track:59D1sgdVPFsCMXjJ3lU0Z5"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Yoake",
+            "artistName": "Mei Semones",
+            "albumName": "Tsukino",
+            "trackUri": "spotify:track:4OAGNHmLQJfxm1dJNRI3mZ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "A Lovely Night",
+            "artistName": "Ryan Gosling",
+            "albumName": "La La Land",
+            "trackUri": "spotify:track:4r9hiElqKWMPT4Z3vN2exq"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Wave",
+            "artistName": "Antônio Carlos Jobim",
+            "albumName": "Wave",
+            "trackUri": "spotify:track:2hXBS8q9rGMovfG1S8FB4F"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Traverse Town",
+            "artistName": "Yoko Shimomura",
+            "albumName": "KINGDOM HEARTS -HD 1.5 ReMIX-",
+            "trackUri": "spotify:track:48UiZwxsvUMKnAlHA3TYSb"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Kemono",
+            "artistName": "Mei Semones",
+            "albumName": "Kemono",
+            "trackUri": "spotify:track:6R8ZIVJEKleJ1cotCDyRfC"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Pepperland - Remastered",
+            "artistName": "George Martin",
+            "albumName": "Yellow Submarine",
+            "trackUri": "spotify:track:3XqQuk01PcRXbyHf2AovYN"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "A Town with an Ocean View",
+            "artistName": "Joe Hisaishi",
+            "albumName": "Kiki's Delivery Service Soundtrack Music Collection",
+            "trackUri": "spotify:track:2ZJ28Rm7OXMYJshLtp5uff"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "My Way - 2008 Remastered",
+            "artistName": "Frank Sinatra",
+            "albumName": "Nothing But The Best",
+            "trackUri": "spotify:track:2YkIDPL5lGhRhomCq4S2RO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "I Always Smile but My Eyes Are Sad",
+            "artistName": "Asokah",
+            "albumName": "I Always Smile but My Eyes Are Sad",
+            "trackUri": "spotify:track:1FyflIoYXwtfR1njREgAgp"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "amuletum",
+            "artistName": "Ichiko Aoba",
+            "albumName": "amuletum bouquet",
+            "trackUri": "spotify:track:4pDeRYL9VvC9eYJpyDXrvy"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "The Path of the Wind - Instrumental",
+            "artistName": "Joe Hisaishi",
+            "albumName": "My Neighbor Totoro Image Song Collection",
+            "trackUri": "spotify:track:7zEZT7jBecQ2B4IQKHBiLn"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "ivy league",
+            "artistName": "potsu",
+            "albumName": "ivy league",
+            "trackUri": "spotify:track:0UsnsNbl7hgw2kGqhTxGBv"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Here, There And Everywhere - Remastered 2009",
+            "artistName": "The Beatles",
+            "albumName": "Revolver",
+            "trackUri": "spotify:track:2B4Y9u4ERAFiMo13XPJyGP"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "儚き春の一幕",
+            "artistName": "Lamp",
+            "albumName": "ランプ幻想",
+            "trackUri": "spotify:track:6ecnv2jSOOKlxY6d9KqQuq"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "ハウスのテーマ",
+            "artistName": "Godiego",
+            "albumName": "ハウス",
+            "trackUri": "spotify:track:18asSxJz2NeCihJcwwhLWO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Grenadine",
+            "artistName": "Vincent Delerm",
+            "albumName": "Seize printemps",
+            "trackUri": "spotify:track:2rso25m7GZBGpliSBgbn2V"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "スウェイ・イット・フラ・ガール",
+            "artistName": "Lisa Ono",
+            "albumName": "Bossa Hula Nova",
+            "trackUri": "spotify:track:5CzhAD9QczjC4IYwmlfDPH"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "ゆめうつつ",
+            "artistName": "Lamp",
+            "albumName": "ランプ幻想",
+            "trackUri": "spotify:track:1GTC0DN9LGOdP0NdvoHyX7"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Cutting Branches For A Temporary Shelter - Remastered 2008",
+            "artistName": "Penguin Cafe Orchestra",
+            "albumName": "Penguin Café Orchestra",
+            "trackUri": "spotify:track:0Lm3loChnSsNS37nxvLYcN"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Tokai",
+            "artistName": "Taeko Onuki",
+            "albumName": "SUNSHOWER",
+            "trackUri": "spotify:track:1SmwJJ8YVgiXtyE6elhUx1"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "How Insensitive (Insensatez)",
+            "artistName": "Antônio Carlos Jobim",
+            "albumName": "Sinatra/Jobim: The Complete Reprise Recordings",
+            "trackUri": "spotify:track:56OMc2pr6XJgpQqASY7kYc"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Dusk",
+            "artistName": "Lamp",
+            "albumName": "Dusk to Dawn",
+            "trackUri": "spotify:track:721kgCWILQ0NBG9eil1nvZ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Et si tu n'existais pas",
+            "artistName": "Joe Dassin",
+            "albumName": "Joe Dassin",
+            "trackUri": "spotify:track:1GeszH3DWCOKwK0d8D5gEZ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-14"
+        },
+        {
+          "track": {
+            "trackName": "La fille d'Ipanema",
+            "artistName": "Pauline Croze",
+            "albumName": "Bossa Nova",
+            "trackUri": "spotify:track:54HjqZdYLyQTirAJTieAnx"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-14"
+        },
+        {
+          "track": {
+            "trackName": "The Last Waltz",
+            "artistName": "Cho Young-Wuk",
+            "albumName": "Oldboy (Original Soundtrack Album)",
+            "trackUri": "spotify:track:098aog4oy8x3IT76fVenQM"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-14"
+        },
+        {
+          "track": {
+            "trackName": "Take Me to the Crib",
+            "artistName": "Brad stank",
+            "albumName": "Eternal Slowdown",
+            "trackUri": "spotify:track:1CPIKTvWqBoAAj3nbryTkb"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-14"
+        },
+        {
+          "track": {
+            "trackName": "Wings",
+            "artistName": "So!YoON!",
+            "albumName": "Wings",
+            "trackUri": "spotify:track:4XQnhcwRPRmGG4E6PakLMb"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-14"
+        },
+        {
+          "track": {
+            "trackName": "Baby Blue",
+            "artistName": "King Krule",
+            "albumName": "6 Feet Beneath the Moon",
+            "trackUri": "spotify:track:1RRBuxXdsIB0yazqGDlKTj"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "café Bleu",
+            "artistName": "Takeshi Nakatsuka",
+            "albumName": "JOY",
+            "trackUri": "spotify:track:5qM20CmiF1Le1UQww15opf"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Duet",
+            "artistName": "Omori",
+            "albumName": "Omori (Original Game Soundtrack), Pt.3",
+            "trackUri": "spotify:track:5RzB3KcfvZgvsWcsETVsqG"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "English Suite No. 2 in A Minor, BWV 807: I. Prelude",
+            "artistName": "Johann Sebastian Bach",
+            "albumName": "Bach, J.S.: English Suites No. 2 & 3 / Scarlatti: 4 Sonatas",
+            "trackUri": "spotify:track:2PZhasyFQR06J0kjgdLv4V"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "The First Garden",
+            "artistName": "Stevie Wonder",
+            "albumName": "Journey Through The Secret Life Of Plants",
+            "trackUri": "spotify:track:2nMEzUpgojXx10jLWT30RX"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Hey",
+            "artistName": "Liana Flores",
+            "albumName": "The Water's Fine!",
+            "trackUri": "spotify:track:6B12omCjAdeVInV04iEtFq"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Intolewd",
+            "artistName": "Matt Maltese",
+            "albumName": "Krystal",
+            "trackUri": "spotify:track:79rfskJwK9NLN3p5cdccth"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Kerina",
+            "artistName": "Adrianne Lenker",
+            "albumName": "a-sides",
+            "trackUri": "spotify:track:57qpL2xmsydc04uBmiH2DC"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Layla - Acoustic; Live at MTV Unplugged, Bray Film Studios, Windsor, England, UK, 1/16/1992; 2013 Remaster",
+            "artistName": "Eric Clapton",
+            "albumName": "Unplugged",
+            "trackUri": "spotify:track:3BEZCNZSmVv30vsMNSOCri"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Tears in Heaven",
+            "artistName": "Eric Clapton",
+            "albumName": "Rush (Music from the Motion Picture Soundtrack)",
+            "trackUri": "spotify:track:1kgdslQYmeTR4thk9whoRw"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "little person",
+            "artistName": "Matt Maltese",
+            "albumName": "madhouse",
+            "trackUri": "spotify:track:1VrUeEmCs6wGwPkWuEFr09"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Piano Concerto in E Major, Op. 59: I. Moderato",
+            "artistName": "Moritz Moszkowski",
+            "albumName": "Moszkowski: Piano Concerto in E Major / From Foreign Lands",
+            "trackUri": "spotify:track:4gYwy7FvViCL0XB8B4lLvx"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Rom-Com Gone Wrong",
+            "artistName": "Matt Maltese",
+            "albumName": "Krystal",
+            "trackUri": "spotify:track:3JPykcDhUA7DMrxN6eXzQ4"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "song for my lost ghost friends",
+            "artistName": "spellcasting",
+            "albumName": "song for my lost ghost friends",
+            "trackUri": "spotify:track:1Q1iMpRlCZ2GA7Knd9qhBO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Violino",
+            "artistName": "Piero Piccioni",
+            "albumName": "Amore mio aiutami (Original Motion Picture Soundtrack)",
+            "trackUri": "spotify:track:77TMuFit7SUhof0gl8LSpE"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Voce é Bossanova",
+            "artistName": "Taeko Onuki",
+            "albumName": "PURISSIMA",
+            "trackUri": "spotify:track:3M7p6WJoq4ErrxVmga2sov"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "The Winner Is",
+            "artistName": "DeVotchKa",
+            "albumName": "Little Miss Sunshine (Original Motion Picture Soundtrack)",
+            "trackUri": "spotify:track:7wFEzF8FbofVlQS1OcbghM"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "yin to yang",
+            "artistName": "runo plum",
+            "albumName": "yin to yang",
+            "trackUri": "spotify:track:2lnOYfJOT8EW9UwK9M1jvz"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Another Day - 2012 Remaster",
+            "artistName": "Paul McCartney",
+            "albumName": "Ram",
+            "trackUri": "spotify:track:6qYmf2NjhDfsF7x5U5DUOf"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-26"
+        },
+        {
+          "track": {
+            "trackName": "Over the Rainbow",
+            "artistName": "Israel Kamakawiwo'ole",
+            "albumName": "Somewhere Over the Rainbow The Best of Israel Kamakawiwo`ole",
+            "trackUri": "spotify:track:4yDjzVhXig9tfO7Zv46FE8"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-26"
+        },
+        {
+          "track": {
+            "trackName": "Let's Dance in the Dirt!",
+            "artistName": "Macabre Plaza",
+            "albumName": "Remember Me? EP from Mp",
+            "trackUri": "spotify:track:5TpxeB5UgBf7Us6cMMAMJX"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "White Winter Hymnal",
+            "artistName": "Fleet Foxes",
+            "albumName": "Fleet Foxes",
+            "trackUri": "spotify:track:4XTuSMs47SIg35KxhNIUGe"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "Warned You",
+            "artistName": "Good Morning",
+            "albumName": "Shawcross",
+            "trackUri": "spotify:track:3GahMRXI3rL2JVeSLZBRnF"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "All Caps",
+            "artistName": "SERAPHINE NOIR",
+            "albumName": "All Caps",
+            "trackUri": "spotify:track:3KD5AnJm4LlibbdykzcfzP"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "The Girl From Ipanema",
+            "artistName": "Stan Getz",
+            "albumName": "The Girl From Ipanema - The Bossa Nova Years",
+            "trackUri": "spotify:track:3898C4AbdbptwYet6547e5"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "Heaven Only Knows",
+            "artistName": "Michael Seyer",
+            "albumName": "Heaven Only Knows",
+            "trackUri": "spotify:track:15MdPQnZf4xMaIIXTGzokP"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "Love Montage",
+            "artistName": "Michael Small",
+            "albumName": "'klute' - Original Soundtrack Recording - Remastered",
+            "trackUri": "spotify:track:1uPSbVIkIU5oZsFfIzsdmI"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "CHHH",
+            "artistName": "Mathieu Boogaerts",
+            "albumName": "Promeneur",
+            "trackUri": "spotify:track:1cPyz5uXnZ0Bb35ozw7OXV"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "5 Pieces, Op. 75, \"The Trees\": No. 5 Granen (The Spruce)",
+            "artistName": "Jean Sibelius",
+            "albumName": "Sibelius: Piano Music, Vol. 4",
+            "trackUri": "spotify:track:5gA69lYP3nCULBTdL3quJO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "Inside My House; Some Place I Keep Dreaming About",
+            "artistName": "Ricky Eat Acid",
+            "albumName": "Three Love Songs",
+            "trackUri": "spotify:track:0diGZ1ihw9FVAf07OEyuOO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "Skating In Central Park",
+            "artistName": "Bill Evans",
+            "albumName": "Undercurrent",
+            "trackUri": "spotify:track:1cpANF6zMBoFoxkoIjZHjv"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "Late Night Earl Grey",
+            "artistName": "Chance Thrash",
+            "albumName": "Late Night Earl Grey",
+            "trackUri": "spotify:track:0MIgm0IAnnZWiGNO9gBBCe"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-09"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    },
+    {
+      "name": " amb",
+      "lastModifiedDate": "2023-12-10",
+      "items": [
+        {
+          "track": {
+            "trackName": "Who Would Leave Their Son out in the Sun?",
+            "artistName": "Have A Nice Life",
+            "albumName": "Deathconsciousness",
+            "trackUri": "spotify:track:0YyazmHAuu1j8wxSZXSPK4"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Storm",
+            "artistName": "Godspeed You! Black Emperor",
+            "albumName": "Lift Your Skinny Fists Like Antennas to Heaven",
+            "trackUri": "spotify:track:1HfJV18PHF2UQqh4TuySBJ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Memory Gongs",
+            "artistName": "Cocteau Twins",
+            "albumName": "The Moon and the Melodies",
+            "trackUri": "spotify:track:1AIAZEGLCQ4Y6oSnsjqOYD"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Motion Picture Soundtrack",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:4SrRrB27n7fiRkQcPoKfpk"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Earthmover",
+            "artistName": "Have A Nice Life",
+            "albumName": "Deathconsciousness",
+            "trackUri": "spotify:track:77yGZRjuWfSzbDT0ROSSUG"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Bloody And Blunt",
+            "artistName": "Cocteau Twins",
+            "albumName": "The Moon and the Melodies",
+            "trackUri": "spotify:track:1uHFzwXv5h4O8pFbo6LFhB"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "When I See Scissors I Can't Help But Think of You",
+            "artistName": "The Dead Texan",
+            "albumName": "The Dead Texan",
+            "trackUri": "spotify:track:3xjhSs614NqALivarSVYhV"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Mg1",
+            "artistName": "Machine Girl",
+            "albumName": "Wlfgrl",
+            "trackUri": "spotify:track:7uk7aG1O2lYLbIt4hE7p5d"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Comfort Chain",
+            "artistName": "Instupendo",
+            "albumName": "Comfort Chain",
+            "trackUri": "spotify:track:0Db8f7uikjXxH3qHe0UKoW"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Six Forty Seven",
+            "artistName": "Instupendo",
+            "albumName": "Six Forty Seven",
+            "trackUri": "spotify:track:2WuK1opHQzRo18YXCtY2DF"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Listen",
+            "artistName": "Alan Watts",
+            "albumName": "Listen, Dream",
+            "trackUri": "spotify:track:2DbzxHuEBPNNPNJ297kPj2"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "ザ・ワード II",
+            "artistName": "セキトオ・シゲオ",
+            "albumName": "華麗なるエレクトーン -ザ・ワード-",
+            "trackUri": "spotify:track:3OCxOUUH3FUf8xk0RuWADJ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "My Warm Blood",
+            "artistName": "The Microphones",
+            "albumName": "The Glow, Pt. 2",
+            "trackUri": "spotify:track:52Qfwu9qm05Jo4en5k7x9v"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "A Rose Blooms in Chaos",
+            "artistName": "Davishmar",
+            "albumName": "A Rose Blooms in Chaos",
+            "trackUri": "spotify:track:7fuKPn33GxRh62aC8n71M3"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Better",
+            "artistName": "sign crushes motorist",
+            "albumName": "i'll be okay",
+            "trackUri": "spotify:track:0Z94dtWElamDwU4NrcGoUR"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Sweden",
+            "artistName": "C418",
+            "albumName": "Minecraft - Volume Alpha",
+            "trackUri": "spotify:track:4NsPgRYUdHu2Q5JRNgXYU5"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Reflections",
+            "artistName": "Toshifumi Hinata",
+            "albumName": "ひとつぶの海",
+            "trackUri": "spotify:track:5Zf25eS8E1znm9mez4cGsm"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Bachelorette",
+            "artistName": "Björk",
+            "albumName": "Homogenic",
+            "trackUri": "spotify:track:30j9ij28SJum1lp740MsHS"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "A Devil's Touch in the Midwest",
+            "artistName": "Macabre Plaza",
+            "albumName": "An Old Smile",
+            "trackUri": "spotify:track:0W2CHYtNLuEBJCCuqOona7"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Everything In Its Right Place",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:2kRFrWaLWiKq48YYVdGcm8"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "A Quick One Before the Eternal Worm Devours Connecticut",
+            "artistName": "Have A Nice Life",
+            "albumName": "Deathconsciousness",
+            "trackUri": "spotify:track:34dkZZNQJzEJRqPkywYmEY"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "lit",
+            "artistName": "Kensuke Ushio",
+            "albumName": "A Shape of Light \"A Silent Voice the Movie\" Original Soundtrack",
+            "trackUri": "spotify:track:0ylf1wQGwutMzirog83Gui"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Kid A",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:3QDahKSqLwYJYQRbILdzS6"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Dirt",
+            "artistName": "Mid-Air Thief",
+            "albumName": "Crumbling",
+            "trackUri": "spotify:track:1Za5odxYVsm6t0efDxHvaD"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Jóga",
+            "artistName": "Björk",
+            "albumName": "Homogenic",
+            "trackUri": "spotify:track:18NehrWLUFK7NPH522YQMQ"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "How to Disappear Completely",
+            "artistName": "Radiohead",
+            "albumName": "Kid A",
+            "trackUri": "spotify:track:2rtGaCAeYtmcIvuZsvgTf6"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-04"
+        },
+        {
+          "track": {
+            "trackName": "Dying Brokenhearted",
+            "artistName": "Empyrium",
+            "albumName": "Where at Night the Wood Grouse Plays",
+            "trackUri": "spotify:track:79q5uWgBdbmKUolgLcI9ed"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-14"
+        },
+        {
+          "track": {
+            "trackName": "Kveldsang",
+            "artistName": "Ulver",
+            "albumName": "Kveldssanger",
+            "trackUri": "spotify:track:06uTbQzroxP7nzKIYTkaV1"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-14"
+        },
+        {
+          "track": {
+            "trackName": "the rodents' discussions",
+            "artistName": "gavin m",
+            "albumName": "the rodents' discussions",
+            "trackUri": "spotify:track:0J02kAxMlMZs2WzByBezWz"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "South",
+            "artistName": "quannnic",
+            "albumName": "South",
+            "trackUri": "spotify:track:6EC1Hkr4hqHXIylbwnNEu1"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Tides Of Manaunaun",
+            "artistName": "Henry Cowell",
+            "albumName": "New Music: Piano Compositions By Henry Cowell",
+            "trackUri": "spotify:track:31LZpbhE8kZqhg4G2XIrNO"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-11-23"
+        },
+        {
+          "track": {
+            "trackName": "Sodium Chloride",
+            "artistName": "Panchiko",
+            "albumName": "D>E>A>T>H>M>E>T>A>L",
+            "trackUri": "spotify:track:7aafGSa6JccYOY9kNV9FNB"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "Flim",
+            "artistName": "Aphex Twin",
+            "albumName": "Come To Daddy",
+            "trackUri": "spotify:track:3JJ4BoL9WVHk4Yye2EGJC7"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "Gm",
+            "artistName": "Bluetile Lounge",
+            "albumName": "Lowercase",
+            "trackUri": "spotify:track:5jTpyPE68peeIJZzx1qTws"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "Gymnopedie No.1",
+            "artistName": "Akira Rabelais",
+            "albumName": "Eisoptrophobia",
+            "trackUri": "spotify:track:4zzqEVtm57zqUhO1yJm295"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "wooden piece",
+            "artistName": "Aoki Takamasa",
+            "albumName": "indigo rose",
+            "trackUri": "spotify:track:4NbstriPIdGn3sZZXq6J6l"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        },
+        {
+          "track": {
+            "trackName": "A Mother's Lament",
+            "artistName": "Dorian Concept",
+            "albumName": "The Nature of Imitation",
+            "trackUri": "spotify:track:6oJrnFB6mrYzj9C4XOveva"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-03"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    },
+    {
+      "name": "trending",
+      "lastModifiedDate": "2023-12-11",
+      "items": [
+        {
+          "track": {
+            "trackName": "Monkey Gone to Heaven",
+            "artistName": "Pixies",
+            "albumName": "Doolittle",
+            "trackUri": "spotify:track:6BT7qiDY4A5tOyklohjQuW"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Bonanza",
+            "artistName": "Madrepaz",
+            "albumName": "Bonanza",
+            "trackUri": "spotify:track:3HfldDtlFDjQ6D0XYagTW4"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "bloom",
+            "artistName": "ネクライトーキー",
+            "albumName": "bloom",
+            "trackUri": "spotify:track:1f37xjUqPlrDvA6MdQoAis"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "You and I",
+            "artistName": "Earth, Wind & Fire",
+            "albumName": "I Am",
+            "trackUri": "spotify:track:6xGrfYIoclflaZvBUeFAwA"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Imagination",
+            "artistName": "Earth, Wind & Fire",
+            "albumName": "Spirit",
+            "trackUri": "spotify:track:1TtWRtu117MTLAxM0LR7PY"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "할시온의 관 Halcyon's Coffin",
+            "artistName": "Shadow Community",
+            "albumName": "동요 / 할시온의 관 Restless Song / Halcyon's Coffin",
+            "trackUri": "spotify:track:5ytxKduhR7ImhgRnQWypBh"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "I Know It's Over - 2011 Remaster",
+            "artistName": "The Smiths",
+            "albumName": "The Queen Is Dead",
+            "trackUri": "spotify:track:3M2bD9SMYnJIPdrTKUnBd3"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Goodbye L.A",
+            "artistName": "Blah Blah Blah",
+            "albumName": "This Is for the Time",
+            "trackUri": "spotify:track:3zY9V0dYqTe1VhwB6NifR0"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Don't Panic",
+            "artistName": "Coldplay",
+            "albumName": "Parachutes",
+            "trackUri": "spotify:track:2QhURnm7mQDxBb5jWkbDug"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "My Way Of Life",
+            "artistName": "Frank Sinatra",
+            "albumName": "Cycles",
+            "trackUri": "spotify:track:0Sc8AsDTBeZFWg8K9tMARE"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Papa Ed's Oobe",
+            "artistName": "Whatever, Dad",
+            "albumName": "Grade Pending",
+            "trackUri": "spotify:track:2J3ASvYwBd5cmZKsWFZtbh"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "SPECIALZ",
+            "artistName": "King Gnu",
+            "albumName": "SPECIALZ",
+            "trackUri": "spotify:track:0GWNtMohuYUEHVZ40tcnHF"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "チキチキバンバン",
+            "artistName": "QUEENDOM",
+            "albumName": "チキチキバンバン",
+            "trackUri": "spotify:track:7xm0KJMfeaJQmQdDxAipiY"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Like the first snow",
+            "artistName": "KIM JUNGHYUN",
+            "albumName": "Mr. Queen (Original Television Soundtrack)",
+            "trackUri": "spotify:track:2K2fsKe40SfyoJQp34dTbs"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "PUZZLE",
+            "artistName": "Soyou",
+            "albumName": "Mr. Queen (Original Television Soundtrack)",
+            "trackUri": "spotify:track:7x2IR3fIQyceQABoESSk4Q"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Keep Going",
+            "artistName": "DinDin",
+            "albumName": "Mr. Queen (Original Television Soundtrack)",
+            "trackUri": "spotify:track:4JSoEKX5jsJeCycfdJWnDx"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Venus (feat. VIINI)",
+            "artistName": "Moon Jong Up",
+            "albumName": "Mr. Queen (Original Television Soundtrack)",
+            "trackUri": "spotify:track:1Lk1GS225mIZkQK5LaLOj0"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Algernon",
+            "artistName": "nickateeen",
+            "albumName": "Algernon",
+            "trackUri": "spotify:track:1eE7NjyGzPtQhtWGk6lmDw"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "La prima volta",
+            "artistName": "The Lovers",
+            "albumName": "Canzoni erotiche e sensuali",
+            "trackUri": "spotify:track:1n0WA2YM38Pi80RYQm91VW"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Love Theme From The Robe - Rudy Van Gelder Remaster",
+            "artistName": "Yusef Lateef",
+            "albumName": "Eastern Sounds",
+            "trackUri": "spotify:track:3Y6s01hMkOYdFZnWHD60Kf"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Ain't No Need to Worry",
+            "artistName": "The Winans",
+            "albumName": "Decisions",
+            "trackUri": "spotify:track:4APHNYFj5x3ccRkhUwlWib"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Troublemaker",
+            "artistName": "Beach House",
+            "albumName": "Bloom",
+            "trackUri": "spotify:track:3Ib1w6wHwg0OSas2QhdJvl"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-08"
+        },
+        {
+          "track": {
+            "trackName": "Darkside/Gone",
+            "artistName": "Dr. Dre",
+            "albumName": "Compton",
+            "trackUri": "spotify:track:5ZEdSY99Mj5U4MIF97EKER"
+          },
+          "episode": null,
+          "localTrack": null,
+          "addedDate": "2023-12-11"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    }
+  ]
+}

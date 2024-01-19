@@ -1,9 +1,19 @@
+---
+Author: Silva Patrick
+---
+
+```{r}
+renv::activate()
+```
+
 ```{r}
 library(spotifyr)
 library(tidyverse)
 library(lubridate)
 library(httpuv)
 library(viridis)
+library(fmsb)
+library(ggradar2)
 ```
 
 ```{r}
@@ -13,215 +23,166 @@ Sys.setenv(SPOTIFY_CLIENT_SECRET = '290ce59c9b10458987bf608c2ee732bb')
 authorization_code <- get_spotify_authorization_code(
                         scope = scopes()[c(4,7,8,9,10,14,15,17)])
 
-data <- read_csv("data/lastfm_and_afs.csv") |>
-  mutate(length = hms(length))
 theme_set(theme_minimal(base_size = 14))
+
+data <- read_csv("../data/top_artists_with_audio_features.csv")
 ```
 
-Audio Features: 
+Audio Features are explained in this link:
+https://help.spotontrack.com/article/what-do-the-audio-features-mean
 
-Beats Per Minute (BPM) - The tempo of the song.
-Energy - The energy of a song - the higher the value, the more energtic the song
-Danceability - The higher the value, the easier it is to dance to this song.
-Loudness - The higher the value, the louder the song.
-Valence - The higher the value, the more positive mood for the song.
-Length - The duration of the song.
-Acoustic - The higher the value the more acoustic the song is.
-Popularity - The higher the value the more popular the song is.
-A.Sep - maximizes the artist separation in the set (removed)
-Rnd - A randon number. Sort by this column to shuffle your playlist. (removed)
+```{r}
+colnames(data)
+```
+
+How many songs does every artist have?
 
 ```{r}
 data |>
-  select(- c("listen_date", "listen_time")) |>
-  filter(!is.na(bpm)) |>
+  select(artist_name, track_name) |>
   distinct() |>
-  ggplot(aes(x = energy, y = bpm, color = valence)) +
-  geom_point() +
-  scale_color_viridis()
+  group_by(artist_name) |>
+  count(sort = TRUE)
 ```
+
+How many songs are labelled under each genre?
 
 ```{r}
 data |>
-  select(- c("listen_date", "listen_time")) |>
-  filter(!is.na(bpm)) |>
+  select(artist_name, track_name, genres) |>
   distinct() |>
-  ggplot(aes(x = energy, y = bpm, color = valence)) +
-  geom_point() +
-  scale_color_viridis()
+  group_by(genres) |>
+  count(sort = TRUE)
 ```
+
+How many artists are labelled under each genre?
 
 ```{r}
 data |>
-  filter(bpm == 0) |>
-  select(artist, track, energy) |>
-  distinct()
-```
-
-```{r}
-data |>
-  select(- c("listen_date", "listen_time")) |>
-  filter(!is.na(bpm)) |>
+  select(artist_name, genres) |>
   distinct() |>
-  ggplot(aes(x = bpm, y = valence, color = energy)) +
+  group_by(genres) |>
+  count(sort = TRUE)
+
+genres_list <- data |>
+  select(artist_name, genres) |>
+  distinct() |>
+  group_by(genres) |>
+  count(sort = TRUE) |>
+  filter(n > 1)
+```
+
+```{r}
+data |>
+  select(artist_name, popularity, genres) |>
+  distinct() |>
+  group_by(artist_name, popularity) |>
+  count(sort = TRUE)
+```
+
+```{r}
+data |>
+  filter(artist_name == "Radiohead") |>
+  mutate(loudness = -loudness) |>
+  select(album_name, danceability, energy, key, mode, loudness, speechiness, acousticness,
+         instrumentalness, liveness, valence, tempo, time_signature, duration_ms) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -album_name,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  mutate(mean = log(mean)) |>
+  ggplot(aes(x = feature, y = mean, color = album_name, group = album_name)) +
   geom_point() +
-  scale_color_viridis()
+  geom_line() +
+  facet_wrap(~album_name,  ncol=3) + 
+  theme(legend.position = "none",
+        axis.ticks.x = element_blank(),
+        axis.text.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "Audio feature distributions across Radiohead's discography",
+       y = NULL, x = NULL)
 ```
 
 ```{r}
 data |>
-  filter(valence == 0) |>
-  select(artist, track, energy) |>
-  distinct()
+  filter(artist_name == "Björk") |>
+  mutate(loudness = -loudness) |>
+  select(album_name, danceability, energy, key, mode, loudness, speechiness, acousticness,
+         instrumentalness, liveness, valence, tempo, time_signature, duration_ms) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -album_name,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  mutate(mean = log(mean)) |>
+  ggplot(aes(x = feature, y = mean, color = album_name, group = album_name)) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~album_name,  ncol=3) + 
+  theme(legend.position = "none",
+        axis.ticks.x = element_blank(),
+        axis.text.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "Audio feature distributions across Björk's discography",
+       y = NULL, x = NULL)
 ```
 
 ```{r}
 data |>
-  filter(!is.na(length)) |>
-  group_by(artist, track, length) |>
-  summarise(time_listened = sum(as.numeric(length)), .groups = "drop") |>
-  mutate(time_listened = seconds_to_period(time_listened)) |>
-  arrange(desc(time_listened))
-
-data |>
-  filter(!is.na(length)) |>
-  group_by(artist, track, length) |>
-  summarise(times_played = n(), .groups = "drop") |>
-  mutate(time_listened = seconds_to_period(times_played * as.numeric(as.period(ms(length), unit = "sec")))) |>
-  arrange(desc(time_listened)) |>
-  relocate(artist, .after = time_listened) |>
-  relocate(track, .after = time_listened)
+  filter(artist_name == "Talking Heads") |>
+  mutate(loudness = -loudness) |>
+  select(album_name, danceability, energy, key, mode, loudness, speechiness, acousticness,
+         instrumentalness, liveness, valence, tempo, time_signature, duration_ms) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -album_name,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  mutate(mean = log(mean)) |>
+  ggplot(aes(x = feature, y = mean, color = album_name, group = album_name)) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~album_name,  ncol=3) + 
+  theme(legend.position = "none",
+        axis.ticks.x = element_blank(),
+        axis.text.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "Audio feature distributions across Talking Heads' discography",
+       y = NULL, x = NULL)
 ```
-
 ```{r}
 data |>
-  filter(!is.na(length)) |>
-  group_by(artist) |>
-  summarise(time_listened = sum(as.numeric(length)), .groups = "drop") |>
-  mutate(time_listened = seconds_to_period(time_listened)) |>
-  arrange(desc(time_listened))
+  filter(artist_name == "JPEGMAFIA") |>
+  mutate(loudness = -loudness) |>
+  select(album_name, danceability, energy, key, mode, loudness, speechiness, acousticness,
+         instrumentalness, liveness, valence, tempo, time_signature, duration_ms) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  pivot_longer(cols = -album_name,
+               names_to = c("feature", ".value"),
+               names_pattern = "(.*)_(.*)") |>
+  mutate(mean = log(mean)) |>
+  ggplot(aes(x = feature, y = mean, color = album_name, group = album_name)) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~album_name,  ncol=3) + 
+  theme(legend.position = "none",
+        axis.ticks.x = element_blank(),
+        axis.text.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "Audio feature distributions across JPEGMAFIA's discography",
+       y = NULL, x = NULL)
 ```
-
-```{r}
-data |>
-  filter(!is.na(length)) |>
-  group_by(artist, album) |>
-  summarise(time_listened = sum(as.numeric(length)), .groups = "drop") |>
-  mutate(time_listened = seconds_to_period(time_listened)) |>
-  arrange(desc(time_listened))
-```
-
-```{r}
-data |>
-  filter(!is.na(bpm)) |>
-  mutate(hour_listened = hour(listen_time)) |>
-  # relocate(hour_listened) |>
-  count(hour_listened, sort = TRUE) |>
-  ggplot(aes(x = hour_listened, y = n)) +
-  geom_col() +
-  labs(title = "Streams per hour from 09/21 until 12/23", y = NULL, x = "Hour")
-```
-
-```{r}
-data |>
-  filter(!is.na(bpm)) |>
-  filter(!(year(listen_date) == "2023" & month(listen_date) == "12")) |>
-  filter(!(year(listen_date) == "2021" & month(listen_date) == "09")) |>
-  mutate(hour_listened = hour(listen_time)) |>
-  group_by(hour_listened) |>
-  summarise(avg_energy = mean(energy),
-            avg_valence = mean(valence),
-            avg_bpm = mean(bpm),
-            avg_danceability = mean(danceability),
-            avg_loudness = mean(loudness),
-            avg_acoustic = mean(acoustic),
-            med_energy = median(energy),
-            med_valence = median(valence),
-            med_bpm = median(bpm),
-            med_danceability = median(danceability),
-            med_loudness = median(loudness),
-            med_acoustic = median(acoustic),) |>
-  # relocate(hour_listened) |>
-  ggplot(aes(x = hour_listened)) +
-  geom_line(aes(y = avg_energy, color = "avg_energy")) +
-  geom_line(aes(y = avg_bpm, color = "avg_bpm")) +
-  geom_line(aes(y = avg_valence, color = "avg_valence")) +
-  #geom_line(aes(y = med_energy, color = "med_energy")) +
-  #geom_line(aes(y = med_valence, color = "med_valence")) +
-  #geom_line(aes(y = med_bpm, color = "med_bpm")) +
-  geom_line(aes(y = avg_danceability, color = "avg_danceability")) +
-  geom_line(aes(y = avg_loudness, color = "avg_loudness")) +
-  geom_line(aes(y = avg_acoustic, color = "avg_acoustic")) +
-  #geom_line(aes(y = med_danceability, color = "med_danceability")) +
-  #geom_line(aes(y = med_loudness, color = "med_loudness")) +
-  #geom_line(aes(y = med_acoustic, color = "med_acoustic")) +
-  expand_limits(y = c(0, 120)) +
-  labs(title = "Audio features in songs per hour from 10/21 until 11/23", y = NULL, x = "Hour")
-```
-
-Problem => not much can be interpreted because the time window is too big.
-
-```{r}
-data |>
-  filter(!is.na(bpm)) |>
-  filter((year(listen_date) == "2023" & month(listen_date) == "11")) |>
-  mutate(hour_listened = hour(listen_time)) |>
-  group_by(hour_listened) |>
-  summarise(avg_energy = mean(energy),
-            avg_valence = mean(valence),
-            avg_bpm = mean(bpm),
-            avg_danceability = mean(danceability),
-            avg_loudness = mean(loudness),
-            avg_acoustic = mean(acoustic),
-            med_energy = median(energy),
-            med_valence = median(valence),
-            med_bpm = median(bpm),
-            med_danceability = median(danceability),
-            med_loudness = median(loudness),
-            med_acoustic = median(acoustic),) |>
-  # relocate(hour_listened) |>
-  ggplot(aes(x = hour_listened)) +
-  geom_line(aes(y = avg_energy, color = "avg_energy")) +
-  geom_line(aes(y = avg_bpm, color = "avg_bpm")) +
-  geom_line(aes(y = avg_valence, color = "avg_valence")) +
-  #geom_line(aes(y = med_energy, color = "med_energy")) +
-  #geom_line(aes(y = med_valence, color = "med_valence")) +
-  #geom_line(aes(y = med_bpm, color = "med_bpm")) +
-  geom_line(aes(y = avg_danceability, color = "avg_danceability")) +
-  geom_line(aes(y = avg_loudness, color = "avg_loudness")) +
-  geom_line(aes(y = avg_acoustic, color = "avg_acoustic")) +
-  #geom_line(aes(y = med_danceability, color = "med_danceability")) +
-  #geom_line(aes(y = med_loudness, color = "med_loudness")) +
-  #geom_line(aes(y = med_acoustic, color = "med_acoustic")) +
-  expand_limits(y = c(0, 120)) +
-  labs(title = "Audio features in songs per hour from 11/23", y = NULL, x = "Hour")
-
-data |>
-  filter(!is.na(bpm)) |>
-  filter((year(listen_date) == "2023" & month(listen_date) == "11")) |>
-  mutate(hour_listened = hour(listen_time)) |>
-  group_by(hour_listened) |>
-  summarise(med_energy = median(energy),
-            med_valence = median(valence),
-            med_bpm = median(bpm),
-            med_danceability = median(danceability),
-            med_loudness = median(loudness),
-            med_acoustic = median(acoustic),) |>
-  # relocate(hour_listened) |>
-  ggplot(aes(x = hour_listened)) +
-  geom_line(aes(y = med_energy, color = "med_energy")) +
-  geom_line(aes(y = med_valence, color = "med_valence")) +
-  geom_line(aes(y = med_bpm, color = "med_bpm")) +
-  geom_line(aes(y = med_danceability, color = "med_danceability")) +
-  geom_line(aes(y = med_loudness, color = "med_loudness")) +
-  geom_line(aes(y = med_acoustic, color = "med_acoustic")) +
-  expand_limits(y = c(0, 120)) +
-  labs(title = "Audio features in songs per hour from 11/23", y = NULL, x = "Hour")
-  
-```
-
--> pointless due to much passive listening. i listen to specific songs or artists, forget about the music
-and listen what spotify recommends me. songs listened together with friends also change the output.
-
-
-
