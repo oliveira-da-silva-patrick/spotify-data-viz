@@ -11,3 +11,7 @@ and everything should be all right.
 Other important info is that since the latest R Studio update, I had to change all my relative paths. My editor
 thinks the root folder of the project is the /src folder and no longer the actual root folder. Please excuse me,
 if this issue is not on your side and you end up needing to maybe remove the '../' in the differen filepaths in the code.
+
+## What is still coming
+- Python code for predictions and plots about predictions
+- Quarto presentation
