@@ -160,6 +160,7 @@ data |>
   labs(title = "Audio feature distributions across Talking Heads' discography",
        y = NULL, x = NULL)
 ```
+
 ```{r}
 data |>
   filter(artist_name == "JPEGMAFIA") |>
@@ -185,4 +186,8 @@ data |>
         axis.text.y = element_blank()) +
   labs(title = "Audio feature distributions across JPEGMAFIA's discography",
        y = NULL, x = NULL)
+```
+
+```{r}
+
 ```
