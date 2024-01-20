@@ -14,3 +14,6 @@ if this issue is not on your side and you end up needing to maybe remove the '..
 
 ## What is still coming
 - Quarto presentation
+
+# Sorry for late submission
+I am sorry for having missed the deadline of the 19th. I promise I will work all Saturday and do my final commit by the 20th tonight.
