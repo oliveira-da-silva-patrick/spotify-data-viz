@@ -321,16 +321,17 @@ history23 <- read_csv("../data/Streaming_History_2023.csv")
 history23 <- history23 |>
   filter(!is.na(master_metadata_track_name))
 
-history23 <- history23 |>
-  mutate(year = year(ts),
-         month = month(ts),
-         day = day(ts),
+history23 |>
+  mutate(date = ymd(substring(ts, 1, 10)),
          time = hms(substring(ts, 12, 19))) |>
-  select(year, month, day, time, platform, ms_played, 
+  select(date, time, platform, ms_played, 
          master_metadata_track_name, master_metadata_album_artist_name,
          master_metadata_album_album_name, reason_start, reason_end,
          shuffle) |>
-  filter(year == 2023)
+  filter(year(date) == 2023) |>
+  write.csv(file = "../data/Streaming_History_2023.csv")
+
+history23 <- read_csv("../data/Streaming_History_2023.csv")
 
 history23 |>
   count(platform)

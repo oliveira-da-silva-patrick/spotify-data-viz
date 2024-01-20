@@ -1,0 +1,90 @@
+Activate renv environment.
+
+```{r}
+renv::activate()
+```
+
+Load the libraries.
+
+```{r}
+library(tidyverse)
+library(spotifyr)
+```
+
+Initialise and setup the environment.
+
+```{r}
+theme_set(theme_minimal(base_size = 14))
+
+artists_af <- read_csv("../data/top_artists_with_audio_features.csv")
+hist2023 <- read.csv("../data/Streaming_History_2023.csv")
+```
+
+Let's connect to Spotify.
+
+```{r}
+Sys.setenv(SPOTIFY_CLIENT_ID = '50a6babd1746400f9de5a5a6ddf2b870')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = '290ce59c9b10458987bf608c2ee732bb')
+
+authorization_code <- get_spotify_authorization_code(
+                        scope = scopes()[c(4,7,8,9,10,14,15,17)])
+```
+
+Explore what my Spotify history and deduce what we can figure out.
+I bought a new phone in July.
+
+```{r}
+hist2023 |>
+  mutate(month = month(date)) |>
+  count(month, platform) |>
+  ggplot(aes(x = month, y = n, fill = platform)) +
+  geom_col() +
+  scale_fill_manual(values=c("android"="#A4C639", "windows"="#3778BF",
+                             "ios" = "#7D7D7D", "osx" = "#A6109F")) +
+  labs(title = "How many songs did I listen on each platform each month?",
+       y = element_blank(),
+       x = element_blank()) +
+  theme(axis.text.x = element_blank(),
+        legend.position = "bottom",
+        legend.title = element_blank())
+```
+```{r}
+hist2023 |>
+  mutate(month = month(date),
+         day = day(date),
+         wday = wday(date, label = TRUE),
+         hour = hour(hms(time))) |>
+  filter(month == 11 & day <= 19 & day >= 13) |>
+  count(wday, hour, platform) |>
+  ggplot(aes(x = hour, y = wday, colour = platform)) +
+  geom_point(aes(size = n+5)) +
+  scale_color_manual(values=c("android"="#A4C639", "windows"="#3778BF",
+                             "ios" = "#7D7D7D", "osx" = "#A6109F")) +
+  labs(title = "Spotify activity during the week of the 13/11 - 19/11",
+       y = element_blank(),
+       x = element_blank()) +
+  theme(legend.position = "none") + 
+  scale_x_continuous(breaks = seq(0, 23, 1))
+```
+
+
+```{r}
+hist2023 |>
+  mutate(month = month(date),
+         day = day(date),
+         wday = wday(date, label = TRUE),
+         hour = hour(hms(time))) |>
+  filter(month == 11 & day <= 26 & day >= 20) |>
+  count(wday, hour, platform) |>
+  ggplot(aes(x = hour, y = wday, colour = platform)) +
+  geom_point(aes(size = n+5)) +
+  scale_color_manual(values=c("android"="#A4C639", "windows"="#3778BF",
+                             "ios" = "#7D7D7D", "osx" = "#A6109F")) +
+  labs(title = "Spotify activity during the week of the 20/11 - 26/11",
+       y = element_blank(),
+       x = element_blank()) +
+  theme(legend.position = "none") + 
+  scale_x_continuous(breaks = seq(0, 23, 1))
+```
+
+
