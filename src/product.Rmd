@@ -9,6 +9,7 @@ Load the libraries.
 ```{r}
 library(tidyverse)
 library(spotifyr)
+library(ggradar)
 ```
 
 Initialise and setup the environment.
@@ -113,8 +114,145 @@ can also figure something out about my listening habits.
 ```{r}
 data |>
   filter(genres %in% top_genres) |>
-  ggplot(aes(y = fct_rev(fct_infreq(genres)))) +
-  geom_bar()
+  ggplot(aes(y = fct_rev(fct_infreq(genres)), fill = genres)) +
+  geom_bar() +
+  labs(title = "Genres I listened to most in 2023",
+       subtitle = "(and their count)",
+       y = element_blank(),
+       x = element_blank()) +
+  scale_fill_manual(values=c("j-rock"="red", "rock"="red",
+                             "alternative rock" = "red")) +
+  theme(legend.position = "none")
+```
+
+```{r}
+artists_af |>
+  filter(artist_name == "Cocteau Twins") |>
+  select(album_name, danceability, energy, mode, speechiness, acousticness,
+         instrumentalness, liveness, valence) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  ggradar(plot.legend = FALSE, 
+          fill = TRUE, fill.alpha = 1,
+          values.radar = element_blank(),
+          group.point.size = 0,
+          axis.labels = c('', '', '' , '', '', '', '', ''),
+          plot.extent.x.sf = 1,
+          plot.extent.y.sf = 1,
+          group.line.width = 1,
+          group.colours = (c("Victorialand" = "#3C4266",
+                             "The Moon and the Melodies" = "#3c4266",
+                             "Garlands" = "#e78558",
+                             "Head Over Heels" = "#e78558"))) +
+  facet_wrap(~album_name, ncol=4) + 
+  theme(strip.background = element_blank(),
+       strip.text.x = element_blank()) +
+  labs(title = "What defines Rock and its subgenres?",
+       subtitle = "A look at the audio features of the different albums of Cocteau Twins (Alt. Rock)") +
+  theme(plot.title = element_text(size = 19, hjust = 0.5),
+        plot.subtitle = element_text(size = 10, hjust = 0.5))
+```
+
+```{r}
+artists_af |>
+  filter(artist_name == "Talking Heads") |>
+  select(album_name, danceability, energy, mode, speechiness, acousticness,
+         instrumentalness, liveness, valence) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  ggradar(plot.legend = FALSE, 
+          fill = TRUE, fill.alpha = 1,
+          values.radar = element_blank(),
+          group.point.size = 0,
+          axis.labels = c('', '', '' , '', '', '', '', ''),
+          plot.extent.x.sf = 1,
+          plot.extent.y.sf = 1,
+          group.line.width = 1,
+          group.colours = (c("#6C6C6C"))) +
+  facet_wrap(~album_name, ncol=4) + 
+  theme(strip.background = element_blank(),
+        strip.text.x = element_blank()) +
+  labs(title = "What defines Rock and its subgenres?",
+       subtitle = "A look at the audio features of the different albums of Talking Heads (Alt. Rock & Rock)") +
+  theme(plot.title = element_text(size = 19, hjust = 0.5),
+        plot.subtitle = element_text(size = 10, hjust = 0.5))
+```
+
+```{r}
+artists_af |>
+  filter(artist_name == "The Beatles") |>
+  filter(str_detect(album_name, "Deluxe", negate = TRUE)) |>
+  filter(str_detect(album_name, "Live", negate = TRUE)) |>
+  select(album_name, danceability, energy, mode, speechiness, acousticness,
+         instrumentalness, liveness, valence) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  ggradar(plot.legend = FALSE, 
+          fill = TRUE, fill.alpha = 1,
+          values.radar = element_blank(),
+          group.point.size = 0,
+          axis.labels = c('', '', '' , '', '', '', '', ''),
+          plot.extent.x.sf = 1,
+          plot.extent.y.sf = 1,
+          group.line.width = 1,
+          group.colours = (c("Yellow Submarine (Remastered)" = "#FBC01A"))) +
+  facet_wrap(~album_name, ncol=5) + 
+  theme(strip.background = element_blank(),
+        strip.text.x = element_blank()) +
+  labs(title = "What defines Rock and its subgenres?",
+       subtitle = "A look at the audio features of the different albums of The Beatles (Rock)") +
+  theme(plot.title = element_text(size = 19, hjust = 0.5),
+        plot.subtitle = element_text(size = 10, hjust = 0.5))
+```
+
+```{r}
+artists_af |>
+  filter(artist_name == "Fishmans") |>
+  select(album_name, danceability, energy, mode, speechiness, acousticness,
+         instrumentalness, liveness, valence) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  ggradar(plot.legend = FALSE, 
+          fill = TRUE, fill.alpha = 1,
+          values.radar = element_blank(),
+          group.point.size = 0,
+          axis.labels = c('', '', '' , '', '', '', '', ''),
+          plot.extent.x.sf = 1,
+          plot.extent.y.sf = 1,
+          group.line.width = 1,
+          group.colours = (c("LONG SEASON" = "#E9967A"))) +
+  facet_wrap(~album_name, ncol=5) + 
+  theme(strip.background = element_blank(),
+        strip.text.x = element_blank()) +
+  labs(title = "What defines Rock and its subgenres?",
+       subtitle = "A look at the audio features of the different albums of Fishmans (J-Rock)") +
+  theme(plot.title = element_text(size = 19, hjust = 0.5),
+        plot.subtitle = element_text(size = 10, hjust = 0.5))
+```
+
+```{r}
+artists_af |>
+  filter(artist_name == "Kendrick Lamar") |>
+  select(album_name, danceability, energy, mode, speechiness, acousticness,
+         instrumentalness, liveness, valence) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  ggradar(plot.legend = FALSE, 
+          fill = TRUE, fill.alpha = 1,
+          values.radar = element_blank(),
+          group.point.size = 0,
+          axis.labels = c('', '', '' , '', '', '', '', ''),
+          plot.extent.x.sf = 1,
+          plot.extent.y.sf = 1,
+          group.line.width = 1,
+          group.colours = (c("#6C6C6C"))) +
+  facet_wrap(~album_name, ncol=4) + 
+  theme(strip.background = element_blank(),
+        strip.text.x = element_blank()) +
+  labs(title = "What defines Rock and its subgenres?",
+       subtitle = "A look at the audio features of the different albums of Kendrick Lamar (Hiphop)") +
+  theme(plot.title = element_text(size = 19, hjust = 0.5),
+        plot.subtitle = element_text(size = 10, hjust = 0.5))
 ```
 
 I am surprised by how much one can figure out about the user by 
