@@ -13,5 +13,7 @@ thinks the root folder of the project is the /src folder and no longer the actua
 if this issue is not on your side and you end up needing to maybe remove the '../' in the differen filepaths in the code.
 
 ## What is still coming
-- Python code for predictions and plots about predictions
 - Quarto presentation
+
+# Sorry for late submission
+I am sorry for having missed the deadline of the 19th. I promise I will work all Saturday and do my final commit by the 20th tonight.
