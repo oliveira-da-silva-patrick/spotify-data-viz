@@ -13,7 +13,7 @@ library(lubridate)
 library(httpuv)
 library(viridis)
 library(fmsb)
-library(ggradar2)
+library(ggradar)
 ```
 
 ```{r}
@@ -109,33 +109,6 @@ data |>
 
 ```{r}
 data |>
-  filter(artist_name == "Björk") |>
-  mutate(loudness = -loudness) |>
-  select(album_name, danceability, energy, key, mode, loudness, speechiness, acousticness,
-         instrumentalness, liveness, valence, tempo, time_signature, duration_ms) |>
-  group_by(album_name) |>
-  summarize(across(everything(), list(mean = mean))) |>
-  pivot_longer(cols = -album_name,
-               names_to = c("feature", ".value"),
-               names_pattern = "(.*)_(.*)") |>
-  mutate(mean = log(mean)) |>
-  ggplot(aes(x = feature, y = mean, color = album_name, group = album_name)) +
-  geom_point() +
-  geom_line() +
-  facet_wrap(~album_name,  ncol=3) + 
-  theme(legend.position = "none",
-        axis.ticks.x = element_blank(),
-        axis.text.x = element_blank(),
-        strip.background = element_blank(),
-        strip.text.x = element_blank(),
-        axis.ticks.y = element_blank(),
-        axis.text.y = element_blank()) +
-  labs(title = "Audio feature distributions across Björk's discography",
-       y = NULL, x = NULL)
-```
-
-```{r}
-data |>
   filter(artist_name == "Talking Heads") |>
   mutate(loudness = -loudness) |>
   select(album_name, danceability, energy, key, mode, loudness, speechiness, acousticness,
@@ -189,5 +162,189 @@ data |>
 ```
 
 ```{r}
+data |>
+  filter(artist_name == "Radiohead") |>
+  select(album_name, danceability, energy, mode, speechiness, acousticness,
+         instrumentalness, liveness, valence) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  ggradar(
+    plot.legend = FALSE,
+    fill = TRUE,
+    values.radar = c('', '', ''),
+    group.point.size = 0,
+    axis.labels = c('', '', '' , '', '', '', '', '')
+  ) 
+#+
+ # facet_wrap(~album_name,  ncol=3)
+```
+```{r}
+data |>
+  filter(artist_name == "Radiohead") |>
+  select(album_name) |>
+  distinct()
+```
+
+```{r}
+data |>
+  filter(artist_name == "Radiohead") |>
+  select(album_name, danceability, energy, mode, speechiness, acousticness,
+         instrumentalness, liveness, valence) |>
+  filter(!album_name %in% c("KID A MNESIA", "OK Computer OKNOTOK 1997 2017")) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean))) |>
+  ggradar(
+    plot.legend = FALSE,
+    fill = TRUE,
+    fill.alpha = 1,
+    values.radar = c('', '', ''),
+    group.point.size = 0,
+    axis.labels = c('', '', '' , '', '', '', '', ''),
+    plot.extent.x.sf = 1,
+    plot.extent.y.sf = 1,
+    group.line.width = 1,
+    group.colours = (c("grey", "TKOL RMX 1234567" = "red", "The King Of Limbs" = "red",
+                       "Kid A" = "red"))
+  ) +
+  facet_wrap(~album_name,  ncol=4) + 
+  theme(strip.background = element_blank(),
+       strip.text.x = element_blank())
+```
+
+```{r}
+data |>
+  filter(album_name == "OK Computer") |>
+  select(track_name, danceability, energy, mode, speechiness, acousticness,
+         instrumentalness, liveness, valence) |>
+  ggradar(
+    plot.legend = FALSE,
+    fill = TRUE,
+    fill.alpha = 1,
+    values.radar = c('', '', ''),
+    group.point.size = 0,
+    axis.labels = c('', '', '' , '', '', '', '', ''),
+    plot.extent.x.sf = 1,
+    plot.extent.y.sf = 1,
+    group.line.width = 1,
+    group.colours = (c("grey", "TKOL RMX 1234567" = "red", "The King Of Limbs" = "red",
+                       "Kid A" = "red"))
+  ) +
+  facet_wrap(~track_name,  ncol=4) + 
+  theme(strip.background = element_blank(),
+       strip.text.x = element_blank())
+```
+
+```{r}
+data |>
+  filter(album_name == "In Rainbows") |>
+  select(track_name, danceability, energy, mode, speechiness, acousticness,
+         instrumentalness, liveness, valence) |>
+  ggradar(
+    plot.legend = FALSE,
+    fill = TRUE,
+    fill.alpha = 1,
+    values.radar = c('', '', ''),
+    group.point.size = 0,
+    axis.labels = c('', '', '' , '', '', '', '', ''),
+    plot.extent.x.sf = 1,
+    plot.extent.y.sf = 1,
+    group.line.width = 1,
+    group.colours = (c("grey", "TKOL RMX 1234567" = "red", "The King Of Limbs" = "red",
+                       "Kid A" = "red"))
+  ) +
+  facet_wrap(~track_name,  ncol=4) + 
+  theme(strip.background = element_blank(),
+       strip.text.x = element_blank())
+```
+
+```{r}
+get_my_top_artists_or_tracks(authorization = authorization_code)
+
+get_user_playlists(user_id = "31wwylzxag7houogy3wl4w47hj6i", authorization = authorization_code) |>
+  filter(name == "peace - 240111") |>
+  pull(id) |>
+  get_playlist_tracks()
+
+get_track_audio_features(id = "6XsWor8ONF8Y1mboLa4l0N")
+```
+
+```{r}
+get_related_artists(id = "4Z8W4fKeB5YxbusRsdQVPb")
+
+data |>
+  filter(artist_name == "Radiohead") |>
+  select(album_name, danceability, energy, key, mode, loudness, speechiness, acousticness,
+         instrumentalness, liveness, valence, tempo, time_signature, duration_ms) |>
+  group_by(album_name) |>
+  summarize(across(everything(), list(mean = mean)))
+
+get_playlist_audio_features('spotify', c('2hfwttgMdT9zqAMIx1nWta')) |>
+  select(danceability, energy, mode, loudness, speechiness, acousticness,
+         instrumentalness, liveness, valence, tempo, time_signature) |>
+  summarize(across(everything(), list(mean = mean)))
+
+get_playlist_audio_features('spotify', c('2hfwttgMdT9zqAMIx1nWta')) |>
+  head(5) |>
+  select(track.id)
+# compare in app recommendations with recs based on audio features
+
+get_recommendations(seed_tracks = c('2NDXdxZjbm5EbbEEDSKXQV', '7dFGkZbmm6cVlI28bfMaWE',
+                                    '7umZiitjVsEjMQ6HNddpUI', '2t8yVaLvJ0RenpXUIAC52d',
+                                    '1CEVg3GpmapQ5rK5feHbFc'),
+                    target_acousticness = 0.4037,
+                    target_danceability = 0.6718, target_energy = 0.648,
+                    target_instrumentalness = 0.00031812, target_liveness = 0.44, 
+                    target_loudness = -6.8802, target_speechiness = 0.229,
+                    target_tempo = 100.9558, target_valence = 0.4274) |>
+  select(name)
+
+get_playlist_audio_features('spotify', c('14eVgsnH0sammRPqZ2L4WG')) |>
+  head(5) |>
+  select(track.id)
+
+get_recommendations(seed_tracks = c('4sUTagdmyuyAxd7RvbygpQ', '2CuUB5MbfRShtunR8g5hjR',
+                                    '5z4vmar50qPl80GjIrPBXm', '6aBUnkXuCEQQHAlTokv9or',
+                                    '6ZMrpXuvDO8T13QVrshXlL'),
+                    target_acousticness = 0.4037,
+                    target_danceability = 0.6718, target_energy = 0.648,
+                    target_instrumentalness = 0.00031812, target_liveness = 0.44, 
+                    target_loudness = -6.8802, target_speechiness = 0.229,
+                    target_tempo = 100.9558, target_valence = 0.4274) |>
+  select(name)
+```
+
+genres are not only identified with audio features
+
+```{r}
+history23 <- read_csv("../data/Streaming_History_2023.csv")
+
+history23 <- history23 |>
+  filter(!is.na(master_metadata_track_name))
+
+history23 <- history23 |>
+  mutate(year = year(ts),
+         month = month(ts),
+         day = day(ts),
+         time = hms(substring(ts, 12, 19))) |>
+  select(year, month, day, time, platform, ms_played, 
+         master_metadata_track_name, master_metadata_album_artist_name,
+         master_metadata_album_album_name, reason_start, reason_end,
+         shuffle) |>
+  filter(year == 2023)
+
+history23 |>
+  count(platform)
+
+history23 |>
+  count(reason_start)
+
+history23 |>
+  count(reason_end)
+
+history23 |>
+  count(master_metadata_album_artist_name, sort = TRUE)
 
 ```
+
+
+
