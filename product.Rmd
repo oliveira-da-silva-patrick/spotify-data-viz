@@ -47,17 +47,18 @@ platform_colors <- c("android" = "#A4C639", "windows" = "#3778BF",
 
 ```{r}
 hist2023 |>
-  mutate(month = month(date)) |>
+  mutate(month = month(date, label = TRUE)) |>
   count(month, platform) |>
   ggplot(aes(x = month, y = n, fill = platform)) +
   geom_col() +
   scale_fill_manual(values = platform_colors) +
-  labs(title = "How many songs did I listen on each platform each month?",
+  labs(title = "Number of streams during each month of 2023",
+       subtitle = "Data goes until the 7th December 2023",
        y = element_blank(),
        x = element_blank()) +
-  theme(axis.text.x = element_blank(),
-        legend.position = "bottom",
-        legend.title = element_blank())
+  theme(legend.position = "bottom", legend.title = element_blank()) +
+  theme(plot.title = element_text(size=18, hjust=0.5, face="bold"),
+        plot.subtitle = element_text(size=13, hjust=0.5))
 ```
 
 ------------------------------------------------------------------------
