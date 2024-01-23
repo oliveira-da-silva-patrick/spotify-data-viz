@@ -101,13 +101,15 @@ hist2023 |>
   ggplot(aes(x = hour, y = fct_rev(wday), colour = platform)) +
   geom_point(aes(size = 8)) +
   scale_color_manual(values = platform_colors) +
-  labs(title = "When did I use Spotify?",
+  labs(title = "When and on what did I use Spotify?",
        y = element_blank(),
        x = element_blank()) +
-  theme(legend.position = "none") + 
+  theme(legend.position = "bottom",
+        legend.title = element_blank()) + 
   scale_x_continuous(breaks = seq(0, 23, 1)) +
   titles_theme +
-  facet_wrap(~week, ncol = 1)
+  facet_wrap(~week, ncol = 1) +
+  guides(size = "none")
 ```
 
 ------------------------------------------------------------------------
@@ -125,17 +127,19 @@ hist2023 |>
   ggplot(aes(x = hour, y = fct_rev(wday), colour = platform)) +
   geom_point(aes(size = 8)) +
   scale_color_manual(values = platform_colors) +
-  labs(title = "When did I use Spotify?",
+  labs(title = "When and on what did I use Spotify?",
        y = element_blank(),
        x = element_blank()) +
-  theme(legend.position = "none") + 
+  theme(legend.position = "bottom",
+        legend.title = element_blank()) + 
   scale_x_continuous(breaks = seq(0, 23, 1)) +
   titles_theme +
   facet_wrap(~week, ncol = 1) +
   annotate("rect", xmin = c(8,10,9,8,10), xmax = c(14,16,16,13,14),
            ymin = c("Mon","Tue","Wed","Thu","Fri"), 
            ymax = c("Mon","Tue","Wed","Thu","Fri"), 
-           alpha = 1, color = "red", fill = "red")
+           alpha = 1, color = "red", fill = "red") +
+  guides(size = "none")
 ```
 
 ------------------------------------------------------------------------
