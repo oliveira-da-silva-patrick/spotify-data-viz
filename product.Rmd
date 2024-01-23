@@ -11,13 +11,15 @@ editor:
 renv::activate()
 ```
 
-```{r include=FALSE}
+```{r include=FALSE, echo=FALSE}
 library(tidyverse)
 library(spotifyr)
 library(ggradar)
+library(grid)
+library(gridExtra)
 ```
 
-```{r include=FALSE}
+```{r include=FALSE, echo=FALSE}
 theme_set(theme_minimal(base_size = 14))
 
 artists_af <- read_csv("data/top_artists_with_audio_features.csv")
@@ -41,6 +43,9 @@ top_genres <- data |>
 
 platform_colors <- c("android" = "#A4C639", "windows" = "#3778BF",
                      "ios" = "#7D7D7D", "osx" = "#A6109F")
+titles_theme <- theme(plot.title = element_text(size = 18, hjust = 0.5, 
+                                                face = "bold"),
+                      plot.subtitle = element_text(size = 13, hjust = 0.5))
 ```
 
 ------------------------------------------------------------------------
@@ -57,8 +62,7 @@ hist2023 |>
        y = element_blank(),
        x = element_blank()) +
   theme(legend.position = "bottom", legend.title = element_blank()) +
-  theme(plot.title = element_text(size=18, hjust=0.5, face="bold"),
-        plot.subtitle = element_text(size=13, hjust=0.5))
+  titles_theme
 ```
 
 ------------------------------------------------------------------------
@@ -69,36 +73,26 @@ hist2023 |>
          day = day(date),
          wday = wday(date, label = TRUE),
          hour = hour(hms(time))) |>
-  filter(month == 11 & day <= 19 & day >= 13) |>
-  count(wday, hour, platform) |>
+  filter(month == 11 & day <= 26 & day >= 13) |>
+  mutate(week = ifelse(day <= 19, "Week of the 13/11 - 19/11",
+                       "Week of the 20/11 - 26/11")) |>
+  group_by(week) |>
   ggplot(aes(x = hour, y = wday, colour = platform)) +
   geom_point(aes(size = 8)) +
   scale_color_manual(values = platform_colors) +
-  labs(title = "Spotify activity during the week of the 13/11 - 19/11",
+  labs(title = "When did I use Spotify?",
        y = element_blank(),
        x = element_blank()) +
   theme(legend.position = "none") + 
-  scale_x_continuous(breaks = seq(0, 23, 1))
+  scale_x_continuous(breaks = seq(0, 23, 1)) +
+  titles_theme +
+  facet_wrap(~week, ncol = 1)
 ```
 
 ------------------------------------------------------------------------
 
 ```{r}
-hist2023 |>
-  mutate(month = month(date),
-         day = day(date),
-         wday = wday(date, label = TRUE),
-         hour = hour(hms(time))) |>
-  filter(month == 11 & day <= 26 & day >= 20) |>
-  count(wday, hour, platform) |>
-  ggplot(aes(x = hour, y = wday, colour = platform)) +
-  geom_point(aes(size = 8)) +
-  scale_color_manual(values = platform_colors) +
-  labs(title = "Spotify activity during the week of the 20/11 - 26/11",
-       y = element_blank(),
-       x = element_blank()) +
-  theme(legend.position = "none") + 
-  scale_x_continuous(breaks = seq(0, 23, 1))
+
 ```
 
 ------------------------------------------------------------------------
