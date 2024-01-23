@@ -1,10 +1,13 @@
 ---
 title: "My Spotify Data"
 author: "Silva Patrick"
-format: revealjs
-editor: 
-  markdown: 
-    wrap: 72
+format: 
+  revealjs:
+    width: 1300
+    min-scale: 1
+    margin: 0.05
+    smaller: true
+    show-slide-number: "all"
 ---
 
 ```{r include=FALSE}
@@ -130,8 +133,15 @@ data |>
        x = element_blank()) +
   scale_fill_manual(values=c("j-rock"="red", "rock"="red",
                              "alternative rock" = "red")) +
-  theme(legend.position = "none")
+  theme(legend.position = "none") +
+  titles_theme
 ```
+
+------------------------------------------------------------------------
+
+### Does Spotify define genres with the song's audio features? {style="center: true"}
+
+Let's look at the audio features of the albums of different artists/bands.
 
 ------------------------------------------------------------------------
 
@@ -150,17 +160,15 @@ artists_af |>
           plot.extent.x.sf = 1,
           plot.extent.y.sf = 1,
           group.line.width = 1,
-          group.colours = (c("Victorialand" = "#3C4266",
-                             "The Moon and the Melodies" = "#3c4266",
+          group.colours = (c("Victorialand" = "#e78558",
+                             "The Moon and the Melodies" = "#e78558",
                              "Garlands" = "#e78558",
                              "Head Over Heels" = "#e78558"))) +
-  facet_wrap(~album_name, ncol=4) + 
+  facet_wrap(~album_name, ncol = 5) + 
   theme(strip.background = element_blank(),
        strip.text.x = element_blank()) +
-  labs(title = "What defines Rock and its subgenres?",
-       subtitle = "A look at the audio features of the different albums of Cocteau Twins (Alt. Rock)") +
-  theme(plot.title = element_text(size = 19, hjust = 0.5),
-        plot.subtitle = element_text(size = 10, hjust = 0.5))
+  labs(title = "Cocteau Twins (Alt. Rock)") +
+  titles_theme
 ```
 
 ------------------------------------------------------------------------
@@ -168,6 +176,8 @@ artists_af |>
 ```{r}
 artists_af |>
   filter(artist_name == "Talking Heads") |>
+  filter(str_detect(album_name, "Deluxe", negate = TRUE)) |>
+  filter(str_detect(album_name, "Expanded", negate = TRUE)) |>
   select(album_name, danceability, energy, mode, speechiness, acousticness,
          instrumentalness, liveness, valence) |>
   group_by(album_name) |>
@@ -180,14 +190,12 @@ artists_af |>
           plot.extent.x.sf = 1,
           plot.extent.y.sf = 1,
           group.line.width = 1,
-          group.colours = (c("#6C6C6C"))) +
-  facet_wrap(~album_name, ncol=4) + 
+          group.colours = (c("Stop Making Sense (Live)" = "#e78558"))) +
+  facet_wrap(~album_name, ncol = 5) + 
   theme(strip.background = element_blank(),
         strip.text.x = element_blank()) +
-  labs(title = "What defines Rock and its subgenres?",
-       subtitle = "A look at the audio features of the different albums of Talking Heads (Alt. Rock & Rock)") +
-  theme(plot.title = element_text(size = 19, hjust = 0.5),
-        plot.subtitle = element_text(size = 10, hjust = 0.5))
+  labs(title = "Talking Heads (Alt. Rock & Rock)") +
+  titles_theme
 ```
 
 ------------------------------------------------------------------------
@@ -209,14 +217,12 @@ artists_af |>
           plot.extent.x.sf = 1,
           plot.extent.y.sf = 1,
           group.line.width = 1,
-          group.colours = (c("Yellow Submarine (Remastered)" = "#FBC01A"))) +
-  facet_wrap(~album_name, ncol=5) + 
+          group.colours = (c("Yellow Submarine (Remastered)" = "#e78558"))) +
+  facet_wrap(~album_name, ncol = 5) + 
   theme(strip.background = element_blank(),
         strip.text.x = element_blank()) +
-  labs(title = "What defines Rock and its subgenres?",
-       subtitle = "A look at the audio features of the different albums of The Beatles (Rock)") +
-  theme(plot.title = element_text(size = 19, hjust = 0.5),
-        plot.subtitle = element_text(size = 10, hjust = 0.5))
+  labs(title = "The Beatles (Rock)") +
+  titles_theme
 ```
 
 ------------------------------------------------------------------------
@@ -237,13 +243,11 @@ artists_af |>
           plot.extent.y.sf = 1,
           group.line.width = 1,
           group.colours = (c("LONG SEASON" = "#E9967A"))) +
-  facet_wrap(~album_name, ncol=5) + 
+  facet_wrap(~album_name, ncol = 5) + 
   theme(strip.background = element_blank(),
         strip.text.x = element_blank()) +
-  labs(title = "What defines Rock and its subgenres?",
-       subtitle = "A look at the audio features of the different albums of Fishmans (J-Rock)") +
-  theme(plot.title = element_text(size = 19, hjust = 0.5),
-        plot.subtitle = element_text(size = 10, hjust = 0.5))
+  labs(title = "Fishmans (J-Rock)") +
+  titles_theme
 ```
 
 ------------------------------------------------------------------------
@@ -263,12 +267,10 @@ artists_af |>
           plot.extent.x.sf = 1,
           plot.extent.y.sf = 1,
           group.line.width = 1,
-          group.colours = (c("#6C6C6C"))) +
-  facet_wrap(~album_name, ncol=4) + 
+          group.colours = (c("#E9967A"))) +
+  facet_wrap(~album_name, ncol = 5) + 
   theme(strip.background = element_blank(),
         strip.text.x = element_blank()) +
-  labs(title = "What defines Rock and its subgenres?",
-       subtitle = "A look at the audio features of the different albums of Kendrick Lamar (Hiphop)") +
-  theme(plot.title = element_text(size = 19, hjust = 0.5),
-        plot.subtitle = element_text(size = 10, hjust = 0.5))
+  labs(title = "Kendrick Lamar (Hiphop)") +
+  titles_theme
 ```
