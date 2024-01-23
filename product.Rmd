@@ -37,16 +37,6 @@ top_genres <- data |>
   pull(genres)
 ```
 
-Let's connect to Spotify.
-
-```{r}
-Sys.setenv(SPOTIFY_CLIENT_ID = '50a6babd1746400f9de5a5a6ddf2b870')
-Sys.setenv(SPOTIFY_CLIENT_SECRET = '290ce59c9b10458987bf608c2ee732bb')
-
-authorization_code <- get_spotify_authorization_code(
-                        scope = scopes()[c(4,7,8,9,10,14,15,17)])
-```
-
 Explore what my Spotify history and deduce what we can figure out.
 I bought a new phone in July.
 
