@@ -25,7 +25,7 @@ authorization_code <- get_spotify_authorization_code(
 
 theme_set(theme_minimal(base_size = 14))
 
-data <- read_csv("../data/top_artists_with_audio_features.csv")
+data <- read_csv("data/top_artists_with_audio_features.csv")
 ```
 
 Audio Features are explained in this link:
@@ -316,7 +316,7 @@ get_recommendations(seed_tracks = c('4sUTagdmyuyAxd7RvbygpQ', '2CuUB5MbfRShtunR8
 genres are not only identified with audio features
 
 ```{r}
-history23 <- read_csv("../data/Streaming_History_2023.csv")
+history23 <- read_csv("data/Streaming_History_2023.csv")
 
 history23 <- history23 |>
   filter(!is.na(master_metadata_track_name))
@@ -329,9 +329,9 @@ history23 |>
          master_metadata_album_album_name, reason_start, reason_end,
          shuffle) |>
   filter(year(date) == 2023) |>
-  write.csv(file = "../data/Streaming_History_2023.csv")
+  write.csv(file = "data/Streaming_History_2023.csv")
 
-history23 <- read_csv("../data/Streaming_History_2023.csv")
+history23 <- read_csv("data/Streaming_History_2023.csv")
 
 history23 |>
   count(platform)

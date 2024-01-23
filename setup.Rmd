@@ -53,7 +53,7 @@ top_artists <- top_artists |>
   unnest(genres)
 
 write_csv(top_artists, 
-          file = "../data/top_artists.csv")
+          file = "data/top_artists.csv")
 ```
 
 Collect the whole discography of these artists.
@@ -74,5 +74,5 @@ audio_features |>
          mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, 
          time_signature, duration_ms, explicit, track_name, album_name, key_name, mode_name, 
          popularity, genres) |>
-  write_csv(file = "../data/top_artists_with_audio_features.csv")
+  write_csv(file = "data/top_artists_with_audio_features.csv")
 ```

@@ -17,9 +17,9 @@ Initialise and setup the environment.
 ```{r}
 theme_set(theme_minimal(base_size = 14))
 
-artists_af <- read_csv("../data/top_artists_with_audio_features.csv")
-hist2023 <- read.csv("../data/Streaming_History_2023.csv")
-raw <- read.csv("../data/Streaming_2023_Raw.csv")
+artists_af <- read_csv("data/top_artists_with_audio_features.csv")
+hist2023 <- read.csv("data/Streaming_History_2023.csv")
+raw <- read.csv("data/Streaming_2023_Raw.csv")
 
 artists_genre <- artists_af |>
   select(artist_name, genres) |>
