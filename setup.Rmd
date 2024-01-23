@@ -9,7 +9,8 @@ install.packages('tidyverse')
 install.packages('lubridate')
 install.packages("httpuv")
 install.packages('ggplot2')
-devtools::install_github("xl0418/ggradar2")
+devtools::install_github("ricardo-bion/ggradar", 
+                          dependencies = TRUE)
 install.packages("viridis")
 
 renv::snapshot()
