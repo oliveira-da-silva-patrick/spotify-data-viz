@@ -328,8 +328,8 @@ history23 |>
          master_metadata_track_name, master_metadata_album_artist_name,
          master_metadata_album_album_name, reason_start, reason_end,
          shuffle) |>
-  filter(year(date) == 2023) |>
-  write.csv(file = "data/Streaming_History_2023.csv")
+  filter(year(date) == 2023) #|>
+  #write.csv(file = "data/Streaming_History_2023.csv")
 
 history23 <- read_csv("data/Streaming_History_2023.csv")
 
