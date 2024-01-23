@@ -1,20 +1,23 @@
-Activate renv environment.
+---
+title: "My Spotify Data"
+author: "Silva Patrick"
+format: revealjs
+editor: 
+  markdown: 
+    wrap: 72
+---
 
-```{r}
+```{r include=FALSE}
 renv::activate()
 ```
 
-Load the libraries.
-
-```{r}
+```{r include=FALSE}
 library(tidyverse)
 library(spotifyr)
 library(ggradar)
 ```
 
-Initialise and setup the environment.
-
-```{r}
+```{r include=FALSE}
 theme_set(theme_minimal(base_size = 14))
 
 artists_af <- read_csv("data/top_artists_with_audio_features.csv")
@@ -37,8 +40,7 @@ top_genres <- data |>
   pull(genres)
 ```
 
-Explore what my Spotify history and deduce what we can figure out.
-I bought a new phone in July.
+------------------------------------------------------------------------
 
 ```{r}
 hist2023 |>
@@ -55,6 +57,8 @@ hist2023 |>
         legend.position = "bottom",
         legend.title = element_blank())
 ```
+
+------------------------------------------------------------------------
 
 ```{r}
 hist2023 |>
@@ -75,6 +79,7 @@ hist2023 |>
   scale_x_continuous(breaks = seq(0, 23, 1))
 ```
 
+------------------------------------------------------------------------
 
 ```{r}
 hist2023 |>
@@ -95,11 +100,7 @@ hist2023 |>
   scale_x_continuous(breaks = seq(0, 23, 1))
 ```
 
-By looking at the times the different platforms are used or when no music is
-being listened to, one can figure out a schedule.
-
-Let's take a look now at what we can learn about different genres to see if we
-can also figure something out about my listening habits.
+------------------------------------------------------------------------
 
 ```{r}
 data |>
@@ -114,6 +115,8 @@ data |>
                              "alternative rock" = "red")) +
   theme(legend.position = "none")
 ```
+
+------------------------------------------------------------------------
 
 ```{r}
 artists_af |>
@@ -143,6 +146,8 @@ artists_af |>
         plot.subtitle = element_text(size = 10, hjust = 0.5))
 ```
 
+------------------------------------------------------------------------
+
 ```{r}
 artists_af |>
   filter(artist_name == "Talking Heads") |>
@@ -167,6 +172,8 @@ artists_af |>
   theme(plot.title = element_text(size = 19, hjust = 0.5),
         plot.subtitle = element_text(size = 10, hjust = 0.5))
 ```
+
+------------------------------------------------------------------------
 
 ```{r}
 artists_af |>
@@ -195,6 +202,8 @@ artists_af |>
         plot.subtitle = element_text(size = 10, hjust = 0.5))
 ```
 
+------------------------------------------------------------------------
+
 ```{r}
 artists_af |>
   filter(artist_name == "Fishmans") |>
@@ -220,6 +229,8 @@ artists_af |>
         plot.subtitle = element_text(size = 10, hjust = 0.5))
 ```
 
+------------------------------------------------------------------------
+
 ```{r}
 artists_af |>
   filter(artist_name == "Kendrick Lamar") |>
@@ -244,13 +255,4 @@ artists_af |>
   theme(plot.title = element_text(size = 19, hjust = 0.5),
         plot.subtitle = element_text(size = 10, hjust = 0.5))
 ```
-
-I am surprised by how much one can figure out about the user by 
-looking at the user data. However, the songs are a bit more cryptic about their
-genres. Spotify decided to only give artists genres. This sounds to be
-chaotic as one might think that genres are defined by the audio features you
-can access through their API. Actually, there's more behind it. After reading
-a paper about how machine learning is used to figure out sounds, I learned 
-that the audio features are not enough. They do describe the song but there is
-a lot that can not be described with them alone.
 
