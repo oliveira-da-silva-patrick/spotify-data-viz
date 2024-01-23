@@ -73,11 +73,11 @@ hist2023 |>
          day = day(date),
          wday = wday(date, label = TRUE),
          hour = hour(hms(time))) |>
-  filter(month == 11 & day <= 26 & day >= 13) |>
-  mutate(week = ifelse(day <= 19, "Week of the 13/11 - 19/11",
-                       "Week of the 20/11 - 26/11")) |>
+  filter(month == 11 & day <= 25 & day >= 12) |>
+  mutate(week = ifelse(day <= 18, "Week of the 12/11 - 18/11",
+                       "Week of the 19/11 - 25/11")) |>
   group_by(week) |>
-  ggplot(aes(x = hour, y = wday, colour = platform)) +
+  ggplot(aes(x = hour, y = fct_rev(wday), colour = platform)) +
   geom_point(aes(size = 8)) +
   scale_color_manual(values = platform_colors) +
   labs(title = "When did I use Spotify?",
@@ -92,7 +92,29 @@ hist2023 |>
 ------------------------------------------------------------------------
 
 ```{r}
-
+hist2023 |>
+  mutate(month = month(date),
+         day = day(date),
+         wday = wday(date, label = TRUE),
+         hour = hour(hms(time))) |>
+  filter(month == 11 & day <= 25 & day >= 12) |>
+  mutate(week = ifelse(day <= 18, "Week of the 12/11 - 18/11",
+                       "Week of the 19/11 - 25/11")) |>
+  group_by(week) |>
+  ggplot(aes(x = hour, y = fct_rev(wday), colour = platform)) +
+  geom_point(aes(size = 8)) +
+  scale_color_manual(values = platform_colors) +
+  labs(title = "When did I use Spotify?",
+       y = element_blank(),
+       x = element_blank()) +
+  theme(legend.position = "none") + 
+  scale_x_continuous(breaks = seq(0, 23, 1)) +
+  titles_theme +
+  facet_wrap(~week, ncol = 1) +
+  annotate("rect", xmin = c(8,10,9,8,10), xmax = c(14,16,16,13,14),
+           ymin = c("Mon","Tue","Wed","Thu","Fri"), 
+           ymax = c("Mon","Tue","Wed","Thu","Fri"), 
+           alpha = 1, color = "red", fill = "red")
 ```
 
 ------------------------------------------------------------------------
