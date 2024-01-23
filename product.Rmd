@@ -38,6 +38,9 @@ top_genres <- data |>
   count(genres, sort = TRUE) |>
   head(10) |>
   pull(genres)
+
+platform_colors <- c("android" = "#A4C639", "windows" = "#3778BF",
+                     "ios" = "#7D7D7D", "osx" = "#A6109F")
 ```
 
 ------------------------------------------------------------------------
@@ -48,8 +51,7 @@ hist2023 |>
   count(month, platform) |>
   ggplot(aes(x = month, y = n, fill = platform)) +
   geom_col() +
-  scale_fill_manual(values=c("android"="#A4C639", "windows"="#3778BF",
-                             "ios" = "#7D7D7D", "osx" = "#A6109F")) +
+  scale_fill_manual(values = platform_colors) +
   labs(title = "How many songs did I listen on each platform each month?",
        y = element_blank(),
        x = element_blank()) +
@@ -70,8 +72,7 @@ hist2023 |>
   count(wday, hour, platform) |>
   ggplot(aes(x = hour, y = wday, colour = platform)) +
   geom_point(aes(size = 8)) +
-  scale_color_manual(values=c("android"="#A4C639", "windows"="#3778BF",
-                             "ios" = "#7D7D7D", "osx" = "#A6109F")) +
+  scale_color_manual(values = platform_colors) +
   labs(title = "Spotify activity during the week of the 13/11 - 19/11",
        y = element_blank(),
        x = element_blank()) +
@@ -91,8 +92,7 @@ hist2023 |>
   count(wday, hour, platform) |>
   ggplot(aes(x = hour, y = wday, colour = platform)) +
   geom_point(aes(size = 8)) +
-  scale_color_manual(values=c("android"="#A4C639", "windows"="#3778BF",
-                             "ios" = "#7D7D7D", "osx" = "#A6109F")) +
+  scale_color_manual(values = platform_colors) +
   labs(title = "Spotify activity during the week of the 20/11 - 26/11",
        y = element_blank(),
        x = element_blank()) +
@@ -255,4 +255,3 @@ artists_af |>
   theme(plot.title = element_text(size = 19, hjust = 0.5),
         plot.subtitle = element_text(size = 10, hjust = 0.5))
 ```
-
